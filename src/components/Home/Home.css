@@ -1,0 +1,147 @@
+.name{
+    font-family: bebas-neue-rounded,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(80px + 2vmin);
+    text-shadow: black 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    left: 8px;
+}
+
+.links{
+    font-family: bebas-neue-rounded,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(48px + 2vmin);
+    /* text-decoration: underline solid 5px; */
+    text-shadow: black 4px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    color: white;
+    position: absolute;
+    left: 546px;
+    top: 191px;
+}
+
+div + div{
+    margin-top: 25px;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.video-react-video{
+    position: relative;
+    top: -1856px;
+    left: 452px;
+    height: 724px;
+    width: 909px;
+  
+}
+
+#vid{
+    position: relative;
+    /* top: -67px; */
+    left: -418px;
+    height: 470px;
+    width: 700px;
+    z-index: 3;
+    
+}
+
+#arrow{
+    height: 37px;
+    width: 138px;
+    position: relative;
+    top: -450px;
+    left: 218px;
+}
+
+.modal{
+    position: relative;
+}
+
+#tv{
+    height: 669px;
+    width: 1005px;
+    position: relative;
+    left: 366px;
+    top: -1150px;
+    z-index: 1;
+}
+
+#remote{
+    height: 592px;
+    width: 236px;
+    position: relative;
+    top: -1124px;
+    left: -937px;
+    
+}
+
+
+
+#modalButton{
+    position: relative;
+    top: 25px;
+    right: -144px;
+    height: 81px;
+    width: 81px;
+    border-radius: 100px;
+    background-color: #323232;
+    outline-style: solid;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    z-index: 1;
+    color: white;
+    font-size: 15px;
+}
+
+.video-react-button.video-react-big-play-button{
+    position: relative;
+    top: -2305px;
+    right: -139px;
+    height: 42px;
+    width: 93px;
+    background-color: #323232;
+    outline-style: solid;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    z-index: 1;
+    font-size: 15px;
+} 
+
+
+
+
+
+#PTButton { 
+    position: relative;
+    top: -2305px;
+    right: -139px;
+    height: 42px;
+    width: 93px;
+    background-color: #323232;
+    outline-style: solid;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    z-index: 1;
+    font-size: 15px;
+} 
+
+
+/* #modal-root > div > div > div > div > button */
+
