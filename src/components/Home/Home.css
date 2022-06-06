@@ -1,3 +1,7 @@
+*{
+    overflow-y: hidden;
+}
+
 .name{
     font-family: bebas-neue-rounded,sans-serif;
     font-weight: 400;
@@ -7,15 +11,15 @@
     display: flex;
     justify-content: center;
     color: white;
-    position: relative;
-    left: 8px;
+    position: absolute;
+    left: 578px;
 }
 
 .links{
     font-family: bebas-neue-rounded,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: calc(48px + 2vmin);
+    font-size: calc(60px + 2vmin);
     /* text-decoration: underline solid 5px; */
     text-shadow: black 4px 4px 4px;
     display: flex;
@@ -24,8 +28,9 @@
     align-content: center;
     color: white;
     position: absolute;
-    left: 546px;
-    top: 191px;
+    left: 598px;
+    top: 205px;
+    cursor: pointer;
 }
 
 div + div{
@@ -40,7 +45,7 @@ a:-webkit-any-link {
 
 .video-react-video{
     position: relative;
-    top: -1856px;
+    top: -700px;
     left: 452px;
     height: 724px;
     width: 909px;
@@ -66,7 +71,7 @@ a:-webkit-any-link {
 }
 
 .modal{
-    position: relative;
+    position: absolute;
 }
 
 #tv{
@@ -74,24 +79,23 @@ a:-webkit-any-link {
     width: 1005px;
     position: relative;
     left: 366px;
-    top: -1150px;
+    top: 15px;
     z-index: 1;
 }
 
 #remote{
-    height: 592px;
+    height: 492px;
     width: 236px;
     position: relative;
-    top: -1124px;
+    top: 10px;
     left: -937px;
-    
 }
 
 
 
 #modalButton{
     position: relative;
-    top: 25px;
+    top: 380px;
     right: -144px;
     height: 81px;
     width: 81px;
@@ -103,12 +107,13 @@ a:-webkit-any-link {
     border-color: rgb(218, 218, 218);
     z-index: 1;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .video-react-button.video-react-big-play-button{
+    display: hidden !important;
     position: relative;
-    top: -2305px;
+    top: -177px;
     right: -139px;
     height: 42px;
     width: 93px;
@@ -124,12 +129,22 @@ a:-webkit-any-link {
 
 
 
-
-
-#PTButton { 
+/* gets rid of the control bar being shown automatically at the bottom */
+.video-react-control-bar{
+    display: none;
     position: relative;
-    top: -2305px;
-    right: -139px;
+    top: -500px;
+}
+
+.video-react{
+    padding-top: 0% !important;
+    
+}
+
+.video-react-play-control{
+    position: relative;
+    top: -413px;
+    right: 1102px;
     height: 42px;
     width: 93px;
     background-color: #323232;
@@ -139,9 +154,8 @@ a:-webkit-any-link {
     border-style: solid;
     border-color: rgb(218, 218, 218);
     z-index: 1;
-    font-size: 15px;
-} 
+    font-size: 19px;
+}
 
 
-/* #modal-root > div > div > div > div > button */
 

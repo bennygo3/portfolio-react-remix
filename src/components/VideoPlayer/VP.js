@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+// import { render } from "react-dom";
+// import Highlight, { defaultProps } from "prism-react-renderer";
 import { Player, ControlBar } from 'video-react';
 import { Button } from 'reactstrap';
-import footballVid from '../../assets/BenFootball.mp4';
+// import footballVid from '../../assets/BenFootball.mp4';
 const sources = {
     footballVid: '../../assets/BenFootball.mp4'
 };
 
-class VideoPlayer extends Component {
-    constructor(props) {
+// class VideoPlayer extends Component {
+//     constructor(props) {
+  export default class PlayerControlExample extends Component{
+    constructor(props, context){
         super(props);
 
         this.state = {
@@ -98,10 +102,10 @@ class VideoPlayer extends Component {
                     ref={player => {
                         this.player = player;
                     }}
-                    autoPlay
+                    // autoPlay
                     >
-                    <source src={footballVid} />
-                    <ControlBar autoHide={false} />
+                    <source src={this.state.source} />
+                    <ControlBar autoHide={true} />
                     </Player>
                     <div className="py-3">
           <Button onClick={this.play} className="mr-3">
@@ -167,9 +171,15 @@ class VideoPlayer extends Component {
             Test movie
           </Button>
         </div>
+        <pre>
+          {/* <PrismCode className="language-json">
+            {JSON.stringify(this.state.player, null, 2)}
+          </PrismCode> */}
+        </pre>
+
             </div>
         );
     }
 }
 
-export default VideoPlayer;
+// export default VideoPlayer;
