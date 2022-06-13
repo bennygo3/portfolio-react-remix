@@ -10,7 +10,8 @@ import remote from '../../assets/tvRemote.svg';
 import footballVid from '../../assets/BenFootball.mp4';
 // import lilCowboy from '../../assets/babyBenCowboyPlastic.png';
 // import Arrow from '../../assets/Arrow.png';
-import { Player, ControlBar, PlayToggle } from 'video-react';
+import { Player, ControlBar, PlayToggle, VolumeMenuButton } from 'video-react';
+// import { VolumeMenuButton } from 'video-react';
 
 
 // const appRootEl = document.getElementById('app-root');
@@ -76,7 +77,10 @@ class Home extends Component {
                     <img id="remote" src= {remote} alt= "tv remote"></img>
                     <source src={footballVid} />
                     <ControlBar autoHide={true} className="my-class" /> 
-                    <PlayToggle  /> 
+                    <PlayToggle /> 
+                    
+                    <VolumeMenuButton />
+                    
                     
                     
                     </Player>
@@ -95,19 +99,19 @@ class Home extends Component {
 
                 <div className='links'>
                     <div id='about'>
-                        <Link to='/aboutme'>About me</Link>
+                        <Link to='/aboutme'> - About me</Link>
                     </div>
                     <div id='portfolio' onClick={() => console.log("clicked2")}>
-                        <Link to='/portfolio'>Portfolio  </Link>
+                        <Link to='/portfolio'> - Portfolio  </Link>
                     </div>
                     <div id='resume' onClick={() => console.log("clicked3")}>
-                        <Link to='/resume'>Resume</Link>
+                        <Link to='/resume'> - Resume</Link>
                     </div>
                     <div id='contact' onClick={() => console.log("clicked4")}>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/contact'> - Contact</Link>
                     </div>
                     <div id='misc'>
-                       <div onClick={this.handleShow}>Misc.</div>
+                       <div onClick={this.handleShow}> - Misc.</div>
                             {modal}
                         </div>
                     
