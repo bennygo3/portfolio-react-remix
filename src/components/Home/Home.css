@@ -45,7 +45,7 @@ a:-webkit-any-link {
 
 .video-react-video{
     position: relative;
-    top: -680px;
+    top: -613px;
     left: 452px;
     height: 724px;
     width: 909px;
@@ -75,12 +75,12 @@ a:-webkit-any-link {
     width: 1005px;
     position: relative;
     left: 366px;
-    top: 71px;
+    top: 110px;
     z-index: 1;
 }
 
 #remote{
-    height: 492px;
+    height: 452px;
     width: 236px;
     position: relative;
     top: 10px;
@@ -91,11 +91,11 @@ a:-webkit-any-link {
 
 #modalButton{
     position: relative;
-    top: 380px;
+    top: 649px;
     right: -144px;
-    height: 81px;
+    height: 38px;
     width: 81px;
-    border-radius: 100px;
+    border-radius: 1px;
     background-color: #323232;
     outline-style: solid;
     border-width: 1px;
@@ -142,10 +142,11 @@ a:-webkit-any-link {
 
 .video-react-play-control{
     position: relative;
-    top: -413px;
-    right: 1102px;
-    height: 42px;
-    width: 93px;
+    top: -363px;
+    right: 1090px;
+    height: 69px;
+    width: 69px;
+    border-radius: 100px;
     background-color: #323232;
     outline-style: solid;
     color: white;
@@ -155,6 +156,36 @@ a:-webkit-any-link {
     z-index: 1;
     font-size: 19px;
     cursor: pointer;
+}
+
+#upVol{
+    position: relative;
+    top: -434px;
+    right: -122px;
+    height: 59px;
+    width: 62px;
+    color: white;
+    background-color: #323232;
+    border-color: rgb(218, 218, 218);
+    outline-style: solid;
+    border-top-right-radius: 31px;
+    border-top-left-radius: 31px;
+    font-size: 16px;
+}
+
+#downVol{
+    position: relative;
+    top: -371px;
+    right: -60px;
+    height: 59px;
+    width: 62px;
+    color: white;
+    background-color: #323232;
+    border-color: rgb(218, 218, 218);
+    outline-style: solid;
+    border-bottom-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    font-size: 16px;
 }
 
 .video-react-volume-menu-button{

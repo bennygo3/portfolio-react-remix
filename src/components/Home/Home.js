@@ -4,14 +4,13 @@ import './Home.css';
 // import PlayerControlExample from '../VideoPlayer/VP';
 import { Link } from 'react-router-dom';
 // import VideoPlayer from '../VideoPlayer/VP';
-// import { Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 import TV from '../../assets/TV.svg';
 import remote from '../../assets/tvRemote.svg';
 import footballVid from '../../assets/BenFootball.mp4';
 // import lilCowboy from '../../assets/babyBenCowboyPlastic.png';
-// import Arrow from '../../assets/Arrow.png';
-import { Player, ControlBar, PlayToggle, VolumeMenuButton } from 'video-react';
-// import { VolumeMenuButton } from 'video-react';
+import { Player, ControlBar, PlayToggle } from 'video-react';
+
 
 
 // const appRootEl = document.getElementById('app-root');
@@ -39,13 +38,17 @@ class Modal extends React.Component {
         );
     }
 }
+
+
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = { showModal: false }
+       
 
         this.handleShow = this.handleShow.bind(this);
         this.handleHide = this.handleHide.bind(this);
+        this.changeVolume = this.changeVolume.bind(this);
         
     }
 
@@ -57,19 +60,26 @@ class Home extends Component {
         this.setState({ showModal: false });
     }
 
+    changeVolume(steps) {
+        return () => {
+          const { player } = this.player.getState();
+          this.player.volume = player.volume + steps;
+        };
+      }
+
    
    
     render() {
         const modal = this.state.showModal ? (
             <Modal>
                 <div className='modal'>
+                    <button id="modalButton" onClick={this.handleHide}>Close</button>
                 
-                <button id="modalButton" onClick={this.handleHide}>Close Modal</button>
-                    <Player 
+                  <Player 
                         // poster= {lilCowboy}
-                    //     ref={player => {
-                    //     this.player = player;
-                    // }}
+                        ref={player => {
+                        this.player = player;
+                     }}
                      
                     >
                         
@@ -79,14 +89,16 @@ class Home extends Component {
                     <ControlBar autoHide={true} className="my-class" /> 
                     <PlayToggle /> 
                     
-                    <VolumeMenuButton />
+                  </Player>
                     
-                    
-                    
-                    </Player>
-                    
-                    
-                        
+                    <Button onClick={this.changeVolume(0.1)} id="upVol">
+                        Vol <br/> +
+                    </Button>
+                    <Button onClick={this.changeVolume(-0.1)} id="downVol">
+                        Vol <br/> -
+                    </Button>
+          
+             
                     
                 </div>
 
