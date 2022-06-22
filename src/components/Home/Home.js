@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './Home.css';
 // import PlayerControlExample from '../VideoPlayer/VP';
@@ -40,15 +40,15 @@ class Modal extends React.Component {
 }
 
 
-class Home extends Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = { showModal: false }
-       
-
+       //handleShow and handleHide for misc modal
         this.handleShow = this.handleShow.bind(this);
         this.handleHide = this.handleHide.bind(this);
-        this.changeVolume = this.changeVolume.bind(this);
+        // 
+        // this.changeVolume = this.changeVolume.bind(this);
         
     }
 
@@ -60,6 +60,7 @@ class Home extends Component {
         this.setState({ showModal: false });
     }
 
+    // volume buttons on remote
     changeVolume(steps) {
         return () => {
           const { player } = this.player.getState();

@@ -3,7 +3,7 @@ import './About.css';
 import { Link } from 'react-router-dom';
 import Arrow from '../../assets/Arrow.png';
 
-const AboutMe = () =>{
+const AboutMe = () => {
     return (
         <div>
             

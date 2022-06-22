@@ -16,6 +16,8 @@ import {
 // import Modal from 'react-modal';
 import Home from './components/Home/Home';
 import AboutMe from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 // import MiscModal from './components/Misc/Misc';
 
 // import VideoJS from './VideoJS';
@@ -28,16 +30,16 @@ class App extends React.Component {
    
     return (
       
-        
-      
       <Router>
         <Routes >
           <Route path = '/' element = {<Home/>} />
           <Route path = '/aboutme' element = {<AboutMe/>} />
+          <Route path = '/portfolio' element = {<Portfolio/>} />
+          <Route path = '/contact' element = {<Contact/>} />
           {/* <Route path = '/misc' element = {<MiscModal/>} /> */}
           {/* <VideoJS options={VideoJsOptions} /> */}
-         </Routes>
-        </Router>
+        </Routes>
+       </Router>
         
       
      
