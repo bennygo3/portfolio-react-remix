@@ -2,41 +2,102 @@
 import React, { useRef } from 'react';
 import clamp from 'lodash-es/clamp';
 import { useSprings, animated } from 'react-spring'; // changed to to from interpolate -deprecated
-import { useGesture } from '@use-gesture/react'; // was 'react-use-gesture' no longer maintained
+import useMeasure from 'react-use-measure';
+import { useDrag } from '@use-gesture/react';
+
 import lilCowboy from '../../assets/babyBenCowboyPlastic.png';
 import remote from '../../assets/tvRemote.svg';
-// import { render } from '@testing-library/react';
+
 import './Portfolio.css';
 
-const Portfolio = () => {
+
 const pages = [
    `${ lilCowboy }`,
    `${ remote }`
 ]
 
-
+// 
+const Portfolio = () => {
     const index = useRef(0)
-    const [props, set] = useSprings(pages.length, i => ({ x: i * window.innerWidth, sc: 1, display: 'block' }))
-    const bind = useGesture(({ down, delta: [xDelta], direction: [xDir], distance, cancel }) => {
-        if (down && distance > window.innerWidth / 2)
-            cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, pages.length -1)))
-        set(i => {
-            if (i < index.current -1 || i > index.current + 1) return { display: 'none'}
-            const x = (i - index.current) * window.innerWidth + (down ? xDelta: 0)
-            const sc = down ? 1 - distance / window.innerWidth / 2 : 1
-            return { x, sc, display: 'block' }
-        }) 
+    const [ref, { width }] = useMeasure()
+    const [props, api] = useSprings(
+        pages.length,
+        i => ({
+            x: i * width,
+            scale: width === 0 ? 1 : 1,
+            display: 'block',
+        }),
+        [width]
+    )
+    const bind = useDrag(({ active, movement: [mx], direction: [xDir], distance, cancel }) => {
+        if (active && distance > width / 2) {
+            index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, pages.length -1)
+            cancel()
+        }
+        api.start(i => {
+            if(i < index.current -1 || i > index.current + 1) return { display: 'none' }
+            const x = (i - index.current) * width + (active ? mx : 0)
+            const scale = active ? 1 - distance / width / 2 : 1
+            return { x, scale, display: 'block' }
+        })
     })
-    return props.map(({ x, display, sc }, i) => (
-        <animated.div id="cardContainer" {...bind()} key={i} style ={{ display, transform: x.to(x => `translate3d(${x}px,0,0)`) }}>
-            <animated.div id="card" style={{ transform: sc.to(s => `scale(${s})`), backgroundImage: `url(${pages[i]})` }} />
-        </animated.div>
-    ))
+    return (
+        <div ref={ref} className= 'wrapper'>
+            {props.map(({ x, display, scale }, i) => (
+                <animated.div className= 'page' {...bind()} key={i} style={{ display, x }}>
+                    <animated.div className='card' style={{ scale, backgroundImage: `url(${pages[i]})` }} />
+                </animated.div>
+            ))}
+        </div>
+    )
 }
 
-
-
 export default Portfolio
+
+// export default function Portfolio() {
+//     return (
+//         <div >
+//             <Viewpager />
+//         </div>
+//     )
+// }
+
+
+
+
+
+
+
+// graveyard: 
+// import { useGesture } from '@use-gesture/react'; // was 'react-use-gesture' no longer maintained
+
+// const Portfolio = () => {
+//     const index = useRef(0)
+//     const [props, set] = useSprings(pages.length, i => ({ x: i * window.innerWidth, sc: 1, display: 'block' }))
+//     const bind = useGesture(({ down, delta: [xDelta], direction: [xDir], distance, cancel }) => {
+//         if (down && distance > window.innerWidth / 2)
+//             cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, pages.length -1)))
+//         set(i => {
+//             if (i < index.current - 1 || i > index.current + 1) return { display: 'none'}
+//             const x = (i - index.current) * window.innerWidth + (down ? xDelta: 0)
+//             const sc = down ? 1 - distance / window.innerWidth / 2 : 1
+//             return { x, sc, display: 'block' }
+//         }) 
+//     })
+//     return props.map(({ x, display, sc }, i) => (
+//         <animated.div id="cardContainer" {...bind()} key={i} style ={{ display, transform: x.value.to(x => `translate3d(${x}px,0,0)`) }}>
+//             <animated.div id="card" style={{ transform: sc.value.to(s => `scale(${s})`), backgroundImage: `url(${pages[i]})` }} />
+//         </animated.div>
+//     ))
+// }
+
+
+
+
+
+// export default Portfolio
+
+// import { useGesture } from '@use-gesture/react'; // was 'react-use-gesture' no longer maintained
 
 // // These two are just helpers, they curate spring data, values that are later being interpolated into css
 // const go = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 }) // changed to to go. was causing error due to duplicate declarations. originally changed interpolate due to deprecation
