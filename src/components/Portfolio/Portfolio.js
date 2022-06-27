@@ -1,19 +1,21 @@
 // import { createRoot } from 'react-dom/client';
 import React, { useRef } from 'react';
-import clamp from 'lodash-es/clamp';
+import clamp from 'lodash.clamp'; //'lodash-es/clamp'
 import { useSprings, animated } from 'react-spring'; // changed to to from interpolate -deprecated
 import useMeasure from 'react-use-measure';
-import { useDrag } from '@use-gesture/react';
+import { useDrag } from 'react-use-gesture'; //'@use-gesture/react'
 
 import lilCowboy from '../../assets/babyBenCowboyPlastic.png';
 import remote from '../../assets/tvRemote.svg';
+import robot from '../../assets/Robot.png';
 
 import './Portfolio.css';
 
 
 const pages = [
    `${ lilCowboy }`,
-   `${ remote }`
+   `${ remote }`,
+   `${robot}`
 ]
 
 // 
