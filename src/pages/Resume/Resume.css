@@ -1,0 +1,65 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pictureFrame{
+    width: 480px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pictureFrame p{
+    font-family: "didot", "serif", monospace;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+#resumeLink{
+    width: 200px;
+    height: auto;
+    padding: 14px;
+    border-bottom: 1px dashed black;
+}
+
+.home{
+    background-image: url(../../assets/blackFrame.png);
+    display: flex;
+    width: 229px;
+    height: 185px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home p{
+    font-family: "didot", "serif", monospace;
+    margin-top: -5px;
+    border-bottom: 1px dashed black;
+}
+
+#homeButton{
+    width: 40px;
+    height: auto;
+    padding: 1px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+.carousel {
+    /* overflow hidden is for the carousel to display properly */
+    overflow: hidden; 
+    height: 100vh;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    background-image: url(../../assets/Letterboard.png);
+    /* background-image: url(../../assets/coolWoodFrameHorizontal.png); */
+    /* background-size: 675px, 490px; */
+    /* background-size: 1200px 875px; */
+    background-size: contain;
+    /* (../../assets/countertopBlueBckg.png) */
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-color: rgb(159, 122, 90);
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.group{
+    position: relative;
+    
+}
+
+.container img {
+    width: 370px;
+    height: auto;
+    
+    border-radius: 1px;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    
+} 
+
+.container img:hover {
+    transform:scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 2.75);
+    cursor: pointer;
+    
+}
+
+.title{
+    position: relative;
+    font-family: omnes-semicond, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: -1px 1px #dedede;
+    font-size: 46px;
+}
+
+.info{
+    position: relative;
+    top: -20px;
+    
+    font-family: omnes-semicond, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: -1px 1px #dedede;
+    font-size: 31px;
+    display: flex;
+    height: 125px;
+    width: 410px;
+    white-space: normal;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.info::-webkit-scrollbar {
+    display: none;
+}
+
+.indicators {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.indicators > button {
+    position: relative;
+    
+    margin: 8px;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-family: omnes-semicond, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: -1px 1px #dedede;
+    font-size: 41px;
+    box-shadow: 5px 5px gray
+}
+
+.indicators > button:hover{
+    cursor: pointer;
+    
+}
+
+.indicators > button.active {
+    color: #fff769;
+    transform:scale(1.50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

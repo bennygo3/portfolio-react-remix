@@ -1,51 +1,45 @@
 import React from 'react';
-// import * as ReactDOM from 'react-dom';
-// , { Component }
+// import  MyContextProvider  from '../src/pages/Misc/MyContext.js';
+import { ModalContextProvider } from '../src/pages/ModalContext/ModalContext.js';
 import './App.css';
 import { 
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Routes, 
   Route,
-  // Outlet,
-  // Link,
-  // useLocation,
-  // useNavigate,
-  // useParams,
-   } from "react-router-dom";
+ 
+} from "react-router-dom";
 // import { Dialog } from "@reach/dialog";
 // import Modal from 'react-modal';
-import Home from './components/Home/Home';
-import AboutMe from './components/About/About';
-import Portfolio from './components/Portfolio/Portfolio';
-import Contact from './components/Contact/Contact';
-// import MiscModal from './components/Misc/Misc';
+// import Chain from './components/ChainPortfolio/ChainP';
 
-// import VideoJS from './VideoJS';
-// import footballVid from './assets/BenFootball.mp4';
-// import miscPopUp from './components/Misc/Misc';
+import Home from './pages/Home/Home';
+import AboutMe from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Resume from './pages/Resume/Resume';
+// import Portfolio  from  './pages/Port/Port';
+import Portfolio  from  './pages/Portfolio/Portfolio';
+import Misc from './pages/Misc/Misc';
 
-class App extends React.Component {
+function App () {
   
-  render() {
-   
     return (
       
-      <Router>
-        <Routes >
+      <ModalContextProvider>
+       <Routes >
           <Route path = '/' element = {<Home/>} />
           <Route path = '/aboutme' element = {<AboutMe/>} />
-          <Route path = '/portfolio' element = {<Portfolio/>} />
+          <Route path = '/resume' element = {<Resume/>} />
           <Route path = '/contact' element = {<Contact/>} />
-          {/* <Route path = '/misc' element = {<MiscModal/>} /> */}
-          {/* <VideoJS options={VideoJsOptions} /> */}
+          <Route path = '/portfolio' element = {<Portfolio/>} />
+          {/* <Route path = '/miscModal' element = {<MiscModal/>} /> */}
+          <Route path = '/misc' element = {<Misc/>} />
+          
         </Routes>
-       </Router>
-        
+        </ModalContextProvider>
       
-     
     );
   }
-}
+
 
 export default App;
 

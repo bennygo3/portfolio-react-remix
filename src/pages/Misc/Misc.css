@@ -1,0 +1,81 @@
+.miscContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+}
+
+.tvContainer{
+    position: relative;
+    height: 60vh;
+    width: 50vw;
+}
+
+.tvContainer img{
+    position: absolute;
+    object-fit: contain;
+
+}
+
+.video{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* aspect-ratio: 16/9; */
+}
+
+.tv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+    z-index: 2;
+}
+
+#remote{
+    height: 345px;
+    width: 157px;
+    position: absolute;
+    /* top: 10px; */
+    left: 89px;
+}
+
+.remoteContainer button{
+    display: flex;
+    position: relative;
+}
+
+.remoteContainer{
+    position: relative;
+   
+
+}
+
+/* .tv{ */
+    /* height: 550px;
+    width: 775px;
+    position: relative; */
+    /* left: 333px; */
+    /* top: 25px; */
+    /* bottom: 1390px; */
+    /* z-index: 2; */
+    /* margin-left: auto;
+    margin-right: auto; */
+/* } */
+
+/* .playerWrapper{
+    position: relative;
+
+}
+
+.playerWrapper img{
+    
+    height: 550px;
+    width: 775px;
+} */
+ 

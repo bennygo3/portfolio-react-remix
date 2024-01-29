@@ -1,0 +1,246 @@
+.background{
+    background-image: url("../../assets/floppyDiscNameStars.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(1rem 1.2rem .2rem rgba(0, 0, 0, 0.2));
+    --h:80vh;
+    height:var(--h);
+    width:var(--h);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+
+.links{
+    font-family: permanent-marker, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.10;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    
+    flex-grow:1;
+    font-size:calc((var(--h) / 16));
+    flex-shrink:0;
+    flex-basis: auto;
+    
+    margin-bottom: 2px;
+}
+
+#about button{
+    font-family: permanent-marker, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.10;
+    color: black;
+
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+
+    flex-grow:1;
+    font-size:calc((var(--h) / 16));
+    flex-shrink:0;
+    flex-basis: auto;
+}
+
+/* about me modal */
+#newsModal{
+    width: 677px;
+    height: 858px;
+}
+
+.ReactModal__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#aboutMeHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutMeHeader h2{
+    font-family: "professor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-block-start: 0.05em;
+    margin-block-end: 0.05em;
+}
+
+#aboutMeHeader button{
+    font-family: "Courier", "Courier New", monospace;
+    font-size: 25px;
+    cursor: pointer;
+    margin-block-end: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.repStars{
+    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#star{
+    display: none;
+}
+
+a:hover + #star {
+    display: inline-flex;
+    position: absolute;
+}
+
+button:hover + #star{
+    display: inline-flex;
+    position: absolute;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modal{
+    position: relative;
+    top: -608px;
+    left: 95px;
+}
+
+.video-react-video{
+    position: relative;
+    z-index: 1;
+    right: -50px;
+    /* top: -123px; */
+    /* left: 452px; */
+    height: 724px;
+    width: 909px;
+}
+
+.video-react{
+    padding-top: 0% !important;
+    overflow-y: hidden;
+    height: 800px;
+    
+}
+
+/* play/pause button */
+.video-react-play-control{
+    position: relative;
+    top: -430px;
+    right: -143px;
+    height: 62px;
+    width: 62px;
+    border-radius: 100px;
+    background-color: #323232;
+    outline-style: solid;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    z-index: 1;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#remoteButtons{
+    display: flex;
+}
+
+#upVol{
+    position: relative;
+    bottom: 762px;
+    left: 108px;
+    height: 51px;
+    width: 63px;
+    color: white;
+    background-color: #323232;
+    border-color: rgb(218, 218, 218);
+    outline-style: none;
+    border-top-right-radius: 39px;
+    border-top-left-radius: 39px;
+    /* border-radius: 70px; */
+    font-size: 16px;
+    border-width: 2px;
+    border-bottom-width: 0.3px;
+    border-style: solid;
+    border-bottom-color:#181818;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#downVol{
+    position: relative;
+    bottom: 716px;
+    left: 45px;
+    height: 51px;
+    width: 63px;
+    color: white;
+    background-color: #323232;
+    border-color: rgb(218, 218, 218);
+    outline-style: none;
+    border-bottom-right-radius: 39px;
+    border-bottom-left-radius: 39px;
+    font-size: 16px;
+    border-width: 2px;
+    border-top-width: 0.3px;
+    border-style: solid;
+    border-top-color:#181818;
+    cursor: pointer;
+}
+
+#modalButton{
+    position: relative;
+    top: 576px;
+    right: -143px;
+    height: 62px;
+    width: 62px;
+    border-radius: 1px;
+    background-color: #323232;
+    outline-style: solid;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.video-react-big-play-button{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

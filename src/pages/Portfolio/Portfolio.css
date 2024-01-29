@@ -1,0 +1,188 @@
+.bckg{
+    /* background-color: rgb(212, 176, 112); */
+    height: 100vh;
+}
+
+.header{
+    font-family: omnes-narrow, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration:  underline solid 15px;
+    text-underline-offset: 10px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.carousel {
+    /* overflow hidden is for the carousel to display properly */
+    overflow: hidden; 
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.portContainer img {
+    width: 425px;
+    height: auto;
+    
+    border-radius: 1px;
+    position: relative;
+    border: 7px solid rgb(0, 0, 0);
+    box-shadow: 4px 6px 15px black;
+    cursor: pointer;
+} 
+
+.group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: auto;
+    
+    max-width: 340px;
+    height: auto;
+    border: 7px solid black;
+    padding: 15px;
+    
+    white-space: initial;
+    hyphens: auto;
+    gap: 10px;
+    box-shadow: 4px 9px 15px black;
+    margin-bottom: 25px;
+}
+
+.title{
+    font-family: belarius-serif, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    text-decoration:  underline solid 5px;
+    text-underline-offset: 8px;
+    line-height: 1.15em;
+}
+
+.info{
+    font-family: bilo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.indicators > button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-family: omnes-narrow, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+    margin: 3px 5px -3px;
+    cursor: pointer;
+    filter: drop-shadow(.1rem .1rem .1rem rgba(0, 0, 0, 0.584));
+}
+
+.indicators > button:hover{
+    transform:scale(1.50);
+}
+
+.indicators > button.active {
+    color: #0099ff;
+    transform:scale(1.50);
+}
+
+.bottomButtonBorder{
+    height: 4px;
+    width: 30%;
+    margin: auto ;
+    background-color: black;
+}
+
+.bbb{
+    height: 4px;
+    width: 36%;
+    margin: 2px auto ;
+    background-color: black;
+}
+
+.bbb0{
+    height: 4px;
+    width: 43%;
+    margin: 2px auto ;
+    background-color: black;
+}
+
+.bbb1{
+    height: 4px;
+    width: 49%;
+    background-color: black;
+    margin: 2px auto;
+}
+.bbb2{
+    height: 4px;
+    width: 55%;
+    background-color: black;
+    margin: 2px auto;
+}
+.bbb3{
+    height: 4px;
+    width: 61%;
+    background-color: black;
+    margin: 2px auto;
+}
+
+
+/* black border around the viewport */
+
+#top, #bottom, #left, #right {
+	background:  rgb(0, 0, 0);
+	position: fixed;
+}
+	
+#left, #right {
+	top: 0; bottom: 0;
+	width: 25px;
+}
+		
+#left { left: 0; }
+#right { right: 0; }
+		
+#top, #bottom {
+	left: 0; right: 0;
+	height: 25px;
+}
+		
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+/* this prevents unwanted, browser implemented css for h1*/
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
