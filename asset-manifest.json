@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react-remix/static/css/main.c1cb8f46.css",
+    "main.css": "/portfolio-react-remix/static/css/main.e7172f11.css",
     "main.js": "/portfolio-react-remix/static/js/main.a95d1415.js",
     "static/media/BenFootball.mp4": "/portfolio-react-remix/static/media/BenFootball.2c813a462beda8394bc7.mp4",
     "static/media/TPCGolf.png": "/portfolio-react-remix/static/media/TPCGolf.e3d74432ea0907fbfc55.png",
@@ -27,11 +27,11 @@
     "static/media/resPPlane.png": "/portfolio-react-remix/static/media/resPPlane.a577525a94f651d49e46.png",
     "static/media/Poster.png": "/portfolio-react-remix/static/media/Poster.b6c1e8381ba6eba3af50.png",
     "index.html": "/portfolio-react-remix/index.html",
-    "main.c1cb8f46.css.map": "/portfolio-react-remix/static/css/main.c1cb8f46.css.map",
+    "main.e7172f11.css.map": "/portfolio-react-remix/static/css/main.e7172f11.css.map",
     "main.a95d1415.js.map": "/portfolio-react-remix/static/js/main.a95d1415.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1cb8f46.css",
+    "static/css/main.e7172f11.css",
     "static/js/main.a95d1415.js"
   ]
 }
