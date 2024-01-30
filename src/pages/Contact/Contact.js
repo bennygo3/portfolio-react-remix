@@ -18,7 +18,7 @@ class Contact extends React.Component {
       <div className="thought card">
         
         <h1 id="email">Email:</h1>
-        <a href="mailto:gobecodeme@gmail.com" rel="noreferrer" target="_blank">
+        <a href="mailto:ben3gome@gmail.com" rel="noreferrer" target="_blank">
           <i className="fa-regular fa-envelope"></i>
         </a>
         <br></br>

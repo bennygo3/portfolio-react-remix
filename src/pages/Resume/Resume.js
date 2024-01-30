@@ -4,7 +4,7 @@ import resumeLink from '../../assets/resPPlane.png';
 import frame from '../../assets/goldFrameWhiteBck.png';
 import starsBackground from '../../assets/yellowStars.jpeg';
 import home from '../../assets/homeIcon.png';
-import BenResume from './BenjaminGomezResume.pdf';
+import BenResume from './Resume.pdf';
 import './Resume.css';
 
 
