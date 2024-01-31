@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 
 import TV from '../../assets/TV.png';
 import remote from '../../assets/Remote.png';
-// import { Player, ControlBar} from 'video-react';
 
 function Misc() {
 
@@ -69,15 +68,15 @@ function Misc() {
         }
     }
     return (
-        <div className="miscContainer">
+        <div>
             <div className='tvContainer'>
                 {renderMedia(mediaContent[currentChannel])}
                 <img className="tv" src={TV} alt="TV frame" />
             </div>
             <div className='remoteContainer'>
-                <img id='remote' src={remote} alt="TV remote" />
+                {/* <img id='remote' src={remote} alt="TV remote" /> */}
 
-                <div>
+                <div className="remoteButtons">
                     <button onClick={togglePlayPause}>{playing ? 'Pause' : 'Play'}</button>
                     <button onClick={increaseVolume}>Volume Up</button>
                     <button onClick={decreaseVolume}>Volume Down</button>
