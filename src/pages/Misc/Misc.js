@@ -8,7 +8,7 @@ import benGolf from '../../assets/TPCGolf.png';
 import { useNavigate } from 'react-router-dom';
 
 import TV from '../../assets/TV.png';
-import remote from '../../assets/Remote.png';
+// import remote from '../../assets/Remote.png';
 
 function Misc() {
 
@@ -22,14 +22,14 @@ function Misc() {
     const [currentChannel, setCurrentChannel] = useState(0);
     const [playing, setPlaying] = useState(false);
     const [volume, setVolume] = useState(0.5);
-    
+
     const nextChannel = () => {
         setCurrentChannel((prevChannel) => (prevChannel + 1) % mediaContent.length);
     };
 
     const previousChannel = () => {
         setCurrentChannel((prevChannel) => {
-            return prevChannel === 0 ? mediaContent.length - 1: prevChannel - 1;
+            return prevChannel === 0 ? mediaContent.length - 1 : prevChannel - 1;
         });
     };
 
@@ -52,15 +52,15 @@ function Misc() {
     };
 
     const renderMedia = (media) => {
-        if(media.type === 'video') {
+        if (media.type === 'video') {
             return (
                 <ReactPlayer
                     className="video"
                     url={media.url}
                     playing={playing}
                     volume={volume}
-                    height="90%"
-                    width="89%"
+                    height="100%"
+                    width="90%"
                 />
             );
         } else if (media.type === 'image') {
@@ -68,9 +68,13 @@ function Misc() {
         }
     }
     return (
-        <div>
+        <div className='electronics'>
+
             <div className='tvContainer'>
-                {renderMedia(mediaContent[currentChannel])}
+                <div className='mediaContainer'>
+                    {renderMedia(mediaContent[currentChannel])}
+                    
+                </div>
                 <img className="tv" src={TV} alt="TV frame" />
             </div>
             <div className='remoteContainer'>
