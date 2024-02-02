@@ -50,18 +50,48 @@
 #remote{
     position: absolute;
     height: 280px;
-    width: 116px;
-}
-
-.remoteButtons {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    width: 115px;
 }
 
 .remoteButtons button {
+    position: relative;
+    top: -45px;
     margin-bottom: 5px;
-    height: 50px;
-    width: 50px;
+    height: 44px;
+    width: 44px;
     border-radius: 100px;
+    border-color:rgb(255, 255, 255);
+    border-width: 1px;
+    color: white;
+    background-color:rgb(40, 40, 40);
+    border-style: solid;
+    padding: 1px;
+}
+
+.topButtons, .buttonGroups {
+    display: flex;
+    gap: 7px; /* Adjust the gap between the Play/Home and the volume/channel groups */
+    
+}
+
+.buttonGroups{
+    margin-top: 10px;
+}
+
+.volumeButtons, .channelButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.volumeButtons button:nth-child(1),
+.channelButtons button:nth-child(1) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 0;
+}
+
+.volumeButtons button:nth-child(2),
+.channelButtons button:nth-child(2) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; 
 }

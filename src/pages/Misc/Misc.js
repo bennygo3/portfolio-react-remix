@@ -78,19 +78,41 @@ const Misc = () => {
             </div>
             <div className='remoteContainer'>
                 <img id='remote' src={remote} alt="TV remote" />
-
                 <div className="remoteButtons">
+                  <div className="topButtons">
                     <button onClick={togglePlayPause}>{playing ? 'Pause' : 'Play'}</button>
                     <button onClick={goHome}>Home</button>
-                    <button onClick={increaseVolume}>Vol +</button>
-                    <button onClick={decreaseVolume}>Vol -</button>
-                    <button onClick={nextChannel}>Ch &#8593;</button>
-                    <button onClick={previousChannel}>Ch &#8595;</button>
+                  </div>
+                  
+                  <div className="buttonGroups">
+                    <div className="volumeButtons">
+                      <button onClick={increaseVolume}>Vol +</button>
+                      <button onClick={decreaseVolume}>Vol -</button>
+                    </div>
+                    <div className="channelButtons">
+                      <button onClick={nextChannel}>Ch &#8593;</button>
+                      <button onClick={previousChannel}>Ch &#8595;</button>
+                    </div>
+                  </div>
                 </div>
             </div>
-
         </div>
     )
 }
 
 export default Misc;
+
+                //  <div className="remoteButtons">
+                //    <div>
+                //     <button onClick={togglePlayPause}>{playing ? 'Pause' : 'Play'}</button>
+                //     <button onClick={goHome}>Home</button>
+                //     </div>
+                    
+                //     <button onClick={increaseVolume}>Vol +</button>
+                //     <button onClick={decreaseVolume}>Vol -</button>
+                    
+                    
+                //     <button onClick={nextChannel}>Ch &#8593;</button>
+                //     <button onClick={previousChannel}>Ch &#8595;</button>
+                   
+                // </div>
