@@ -30,7 +30,8 @@
     position: relative;
     
     flex-grow:1;
-    font-size:calc((var(--h) / 16));
+    /* font-size:calc((var(--h) / 16)); */
+    font-size: 5vh;
     flex-shrink:0;
     flex-basis: auto;
     

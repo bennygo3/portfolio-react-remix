@@ -51,15 +51,12 @@
     position: absolute;
     height: 280px;
     width: 116px;
-    
 }
 
 .remoteButtons {
     display: flex;
     flex-direction: column;
     position: relative;
-    
-
 }
 
 .remoteButtons button {
