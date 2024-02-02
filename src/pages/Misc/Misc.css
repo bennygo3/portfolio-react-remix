@@ -1,64 +1,70 @@
-.electronics{
+.electronics {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    /* height: 100vh; */
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    align-items: center;
+    gap: 50px;
+    height: 100dvh;
+    width: 100dvw;
 }
 
-.tvContainer{
-    flex: 1 1;
+.tvContainer {
     position: relative;
-    height: 57vh;
-    max-width: 800px;
-    max-height: 80vh;
+    max-height: 677px;
+    height: 450px;
+    min-height: 300px;
+    max-width: 829px;
+    width: 715px;
+    min-width: 368px;
 }
 
-.mediaContainer{
+.video {
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top: 0%;
+    left: 8%;
     right: 1%;
-    bottom: 10%;
+    bottom: 0%;
     z-index: 1;
 }
 
-.tv{
+.tv {
     position: absolute;
-    top: 4%;
-    left: 0;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
     z-index: 2;
 }
 
-.video, .image{
+.image {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-
-.remoteContainer{
-    flex: 1;
+.remoteContainer {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    background-image: url("../../assets/Remote.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 330px;
-    max-width: 150px;
+}
+
+#remote{
+    position: absolute;
+    height: 280px;
+    width: 116px;
+    
 }
 
 .remoteButtons {
     display: flex;
     flex-direction: column;
+    position: relative;
+    
+
 }
 
-.remoteButtons button{
-    margin-bottom: 10px;
+.remoteButtons button {
+    margin-bottom: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
 }

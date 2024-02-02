@@ -6,11 +6,12 @@ import babyBen from '../../assets/babyBenCowboyPlastic.png';
 import moon from '../../assets/moonBright.png';
 import benGolf from '../../assets/TPCGolf.png';
 import { useNavigate } from 'react-router-dom';
+import setBodyColor from '../background';
 
 import TV from '../../assets/TV.png';
-// import remote from '../../assets/Remote.png';
+import remote from '../../assets/Remote.png';
 
-function Misc() {
+const Misc = () => {
 
     const mediaContent = [
         { type: 'video', url: footballVid },
@@ -60,33 +61,31 @@ function Misc() {
                     playing={playing}
                     volume={volume}
                     height="100%"
-                    width="90%"
+                    width="88%"
                 />
             );
         } else if (media.type === 'image') {
-            return <img src={media.url} alt="Media content" style={{ height: '80%', width: '89%' }} />
+            return <img src={media.url} alt="Media content" style={{ height: '91%', width: '91%' }} />
         }
     }
+
+    setBodyColor({ color: "#5e725a" });
     return (
         <div className='electronics'>
-
             <div className='tvContainer'>
-                <div className='mediaContainer'>
-                    {renderMedia(mediaContent[currentChannel])}
-                    
-                </div>
+                {renderMedia(mediaContent[currentChannel])}
                 <img className="tv" src={TV} alt="TV frame" />
             </div>
             <div className='remoteContainer'>
-                {/* <img id='remote' src={remote} alt="TV remote" /> */}
+                <img id='remote' src={remote} alt="TV remote" />
 
                 <div className="remoteButtons">
                     <button onClick={togglePlayPause}>{playing ? 'Pause' : 'Play'}</button>
-                    <button onClick={increaseVolume}>Volume Up</button>
-                    <button onClick={decreaseVolume}>Volume Down</button>
-                    <button onClick={nextChannel}>Next Channel</button>
-                    <button onClick={previousChannel}>Previous Channel</button>
                     <button onClick={goHome}>Home</button>
+                    <button onClick={increaseVolume}>Vol +</button>
+                    <button onClick={decreaseVolume}>Vol -</button>
+                    <button onClick={nextChannel}>Ch &#8593;</button>
+                    <button onClick={previousChannel}>Ch &#8595;</button>
                 </div>
             </div>
 
@@ -94,4 +93,4 @@ function Misc() {
     )
 }
 
-export default Misc
+export default Misc;
