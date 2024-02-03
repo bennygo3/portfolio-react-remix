@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MediaDescription from './MediaDescription';
 import './Misc.css';
 import ReactPlayer from 'react-player';
 import footballVid from '../../assets/BenFootball.mp4';
@@ -18,6 +19,13 @@ const Misc = () => {
         { type: 'image', url: benGolf },
         { type: 'image', url: moon },
         { type: 'image', url: babyBen },
+    ];
+
+    const mediaDescriptions = [
+        "Living in the glory days? Me? Never!",
+        "I worked at TPC Scottsdale",
+        "I took this picture of a moon",
+        "A picture of younger me, transformed into a toy(?) with Adobe Photoshop",
     ];
 
     const [currentChannel, setCurrentChannel] = useState(0);
@@ -65,13 +73,14 @@ const Misc = () => {
                 />
             );
         } else if (media.type === 'image') {
-            return <img src={media.url} alt="Media content" style={{ height: '91%', width: '91%' }} />
+            return <img src={media.url} alt="Media content" style={{ height: '100%', width:'100%', objectFit: 'contain' }} />
         }
     }
 
     setBodyColor({ color: "#5e725a" });
     return (
         <div className='electronics'>
+            <div className="tvRemoteContainer">
             <div className='tvContainer'>
                 {renderMedia(mediaContent[currentChannel])}
                 <img className="tv" src={TV} alt="TV frame" />
@@ -96,23 +105,11 @@ const Misc = () => {
                   </div>
                 </div>
             </div>
+            </div>
+            <MediaDescription description={mediaDescriptions[currentChannel]} />
         </div>
     )
 }
 
 export default Misc;
 
-                //  <div className="remoteButtons">
-                //    <div>
-                //     <button onClick={togglePlayPause}>{playing ? 'Pause' : 'Play'}</button>
-                //     <button onClick={goHome}>Home</button>
-                //     </div>
-                    
-                //     <button onClick={increaseVolume}>Vol +</button>
-                //     <button onClick={decreaseVolume}>Vol -</button>
-                    
-                    
-                //     <button onClick={nextChannel}>Ch &#8593;</button>
-                //     <button onClick={previousChannel}>Ch &#8595;</button>
-                   
-                // </div>

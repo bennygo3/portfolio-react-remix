@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 50px;
     height: 100dvh;
     width: 100dvw;
@@ -31,7 +32,7 @@
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     z-index: 2;
 }
 
@@ -39,6 +40,12 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.tvRemoteContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .remoteContainer {
@@ -94,4 +101,9 @@
 .channelButtons button:nth-child(2) {
     border-top-left-radius: 0;
     border-top-right-radius: 0; 
+}
+
+.miscDescription{
+    text-align: center;
+    width: 100%;
 }
