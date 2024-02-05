@@ -31,7 +31,6 @@ function App () {
           <Route path = '/resume' element = {<Resume/>} />
           <Route path = '/contact' element = {<Contact/>} />
           <Route path = '/portfolio' element = {<Portfolio/>} />
-          {/* <Route path = '/miscModal' element = {<MiscModal/>} /> */}
           <Route path = '/misc' element = {<Misc/>} />
           
         </Routes>
