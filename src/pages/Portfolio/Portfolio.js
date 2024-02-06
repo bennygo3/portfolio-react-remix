@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useSwipeable } from "react-swipeable";
-
 import setBodyColor from '../background';
-
 import Poke from "../../assets/PokeWeather.png";
 import Decked from "../../assets/Decked.png";
 import Weather from "../../assets/WhereToWeather.png";

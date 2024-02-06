@@ -48,24 +48,24 @@ const Home = () => {
                             {/* repeatchar component was a challenge to myself. come up with a different way to display repeating elements */}
                             <RepeatChar id="repStars" character="*" count={10} />
                         </Modal>
-                        <span id="star">*</span>
+                        <span className="star">*</span>
 
                     </div>
                     <div id='port'>
                         <Link to='/portfolio'>-Portfolio</Link>
-                        <span id="star">*</span>
+                        <span className="star">*</span>
                     </div>
                     <div id='resume'>
                         <Link to='/resume'>-Resume</Link>
-                        <span id="star">*</span>
+                        <span className="star">*</span>
                     </div>
                     <div id='contact'>
                         <Link to='/contact'>-Contact</Link>
-                        <span id="star">*</span>
+                        <span className="star">*</span>
                     </div>
                     <div id='misc'>
                         <Link to='/misc'>-Misc.</Link>
-                        <span id="star">*</span>
+                        <span className="star">*</span>
                     </div>
                 </div>
 

@@ -1,13 +1,11 @@
-.background{
+.background {
     background-image: url("../../assets/floppyDiscNameStars.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     filter: drop-shadow(1rem 1.2rem .2rem rgba(0, 0, 0, 0.2));
-    --h:80vh;
-    height:var(--h);
-    width:var(--h);
-    
+    height: 80vh;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,17 +26,16 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    
-    flex-grow:1;
-    /* font-size:calc((var(--h) / 16)); */
+
+    flex-grow: 1;
     font-size: 5vh;
-    flex-shrink:0;
+    flex-shrink: 0;
     flex-basis: auto;
-    
+
     margin-bottom: 2px;
 }
 
-.links button{
+.links button {
     font-family: permanent-marker, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -50,14 +47,14 @@
     padding: 0px;
     cursor: pointer;
 
-    flex-grow:1;
-    font-size:calc((var(--h) / 16));
-    flex-shrink:0;
+    flex-grow: 1;
+    font-size: calc((var(--h) / 16));
+    flex-shrink: 0;
     flex-basis: auto;
 }
 
 /* about me modal */
-#newsModal{
+#newsModal {
     width: 677px;
     height: 858px;
 }
@@ -69,13 +66,13 @@
     width: 60%;
 }
 
-#aboutMeHeader{
+#aboutMeHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#aboutMeHeader h2{
+#aboutMeHeader h2 {
     font-family: "professor", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -84,7 +81,7 @@
     margin-block-end: 0.05em;
 }
 
-#aboutMeHeader button{
+#aboutMeHeader button {
     font-family: "Courier", "Courier New", monospace;
     font-size: 25px;
     cursor: pointer;
@@ -93,20 +90,21 @@
     border-radius: 5px;
 }
 
-.repStars{
+.repStars {
     font-size: 30px;
 }
 
-#star{
+.star {
     display: none;
+    margin-left: 10px;
 }
 
-a:hover + #star {
+a:hover+.star {
     display: inline-flex;
     position: absolute;
 }
 
-button:hover + #star{
+button:hover+.star {
     display: inline-flex;
     position: absolute;
 }
@@ -116,8 +114,3 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
-
-
-
-
-
