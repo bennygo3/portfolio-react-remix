@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio-react-remix/static/css/main.2f4c1ace.css",
-    "main.js": "/portfolio-react-remix/static/js/main.dde111ff.js",
+    "main.css": "/portfolio-react-remix/static/css/main.67a718c0.css",
+    "main.js": "/portfolio-react-remix/static/js/main.e8a532f7.js",
     "static/media/BenFootball.mp4": "/portfolio-react-remix/static/media/BenFootball.2c813a462beda8394bc7.mp4",
     "static/media/TPCGolf.png": "/portfolio-react-remix/static/media/TPCGolf.e3d74432ea0907fbfc55.png",
     "static/media/BenNewestNews.png": "/portfolio-react-remix/static/media/BenNewestNews.d9c535329cca8f0dc242.png",
+    "static/media/goldArtFrameWhiteBckg.png": "/portfolio-react-remix/static/media/goldArtFrameWhiteBckg.67e6a930f4cd63574713.png",
     "static/media/portfolioSample.png": "/portfolio-react-remix/static/media/portfolioSample.be999b31b1c5b0725c5a.png",
     "static/media/yellowStars.jpeg": "/portfolio-react-remix/static/media/yellowStars.22dc7cf77181b9417ea4.jpeg",
-    "static/media/blackFrame.png": "/portfolio-react-remix/static/media/blackFrame.2c75322037742d0e8039.png",
     "static/media/SQL.png": "/portfolio-react-remix/static/media/SQL.e434f2c30fe7a9588fcd.png",
     "static/media/PokeWeather.png": "/portfolio-react-remix/static/media/PokeWeather.10aa1b6c23384f53a115.png",
     "static/media/floppyDiscNameStars.webp": "/portfolio-react-remix/static/media/floppyDiscNameStars.0646e6b60fb9da109694.webp",
@@ -27,11 +27,11 @@
     "static/media/resPPlane.png": "/portfolio-react-remix/static/media/resPPlane.a577525a94f651d49e46.png",
     "static/media/Poster.png": "/portfolio-react-remix/static/media/Poster.b6c1e8381ba6eba3af50.png",
     "index.html": "/portfolio-react-remix/index.html",
-    "main.2f4c1ace.css.map": "/portfolio-react-remix/static/css/main.2f4c1ace.css.map",
-    "main.dde111ff.js.map": "/portfolio-react-remix/static/js/main.dde111ff.js.map"
+    "main.67a718c0.css.map": "/portfolio-react-remix/static/css/main.67a718c0.css.map",
+    "main.e8a532f7.js.map": "/portfolio-react-remix/static/js/main.e8a532f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f4c1ace.css",
-    "static/js/main.dde111ff.js"
+    "static/css/main.67a718c0.css",
+    "static/js/main.e8a532f7.js"
   ]
 }
