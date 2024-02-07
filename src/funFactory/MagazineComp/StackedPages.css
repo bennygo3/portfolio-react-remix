@@ -1,0 +1,155 @@
+.stackedPagesContainer{
+    position: relative;
+    height: 60vh;
+    width: 98%;
+    
+}
+
+.spread{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: calc(100% - 40px); /* Subtract the width of the pageEdges */
+}
+
+.pageEdges{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    
+    /* border-top: 1px solid #777;
+    border-bottom: 1px solid #777; */
+    /* display: flex;
+    flex-direction: column; 
+    
+    transform-origin: left;
+    transform: rotateY(-10deg);  */
+    /* Slight rotation for fanned-out look */
+}
+
+.pageEdge{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #f8f8f8;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* .pageEdge{
+    flex: 1;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 2px; 
+} */
+
+.leftPage, .rightPage {
+    width: 50%; /* Half the width of the spread container */
+    height: 100%;
+    border: 1px solid #777;
+    background-color: #fff; /* Assuming pages are white */
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    position: relative;
+    z-index: 1;
+    
+}
+
+.leftPage::after{
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #777;
+    z-index: 2;
+}
+
+.pageEdge:nth-child(1) { right: 8px; }
+.pageEdge:nth-child(2) { right: 16px; }
+.pageEdge:nth-child(3) { right: 24px; }
+.pageEdge:nth-child(4) { right: 32px; }
+.pageEdge:nth-child(5) { right: 40px; }
+.pageEdge:nth-child(6) { right: 48px; }
+
+
+
+/* .pageEdge:last-child{
+    margin-bottom: 0;
+    box-shadow: inset 0px -2px 2px 0px rgba(0, 0, 0, 0.4);
+} */
+
+/* .stackedPagesContainer{
+    position: relative;
+} */
+
+/* .spread{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60vh;
+    width: 98%;
+} */
+
+/* .pageEdges{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .pageEdge {
+    flex: 1;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 2px 0;
+} */
+
+
+
+/* .stackedPages{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    transform-style: preserve-3d;
+} */
+
+/* .leftPage, .rightPage{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #777777;
+    transform-style: preserve-3d;
+} */
+
+/* .pageCrease{
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+} */
+/* .page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateZ(-1px);
+    transition: transform 0.5s;
+}
+
+.page.active {
+    transform: translateZ(30px);
+} */

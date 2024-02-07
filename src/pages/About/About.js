@@ -1,12 +1,11 @@
 import React , { useState } from 'react';
-
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
-// import { useGesture } from '@use-gesture/react'
+
 import { useDrag } from 'react-use-gesture'
 import lilCowboy from '../../assets/babyBenCowboyPlastic.png';
 import remote from '../../assets/Remote.png';
 import poster from '../../assets/Poster.png';
-// import './About.css';
+
 import styles from './styles.module.css';
 import setBodyColor from '../background';
 

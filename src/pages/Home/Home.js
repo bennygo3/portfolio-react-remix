@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import StackedPages from '../../funFactory/MagazineComp/StackedPages';
 import RepeatChar from '../../funFactory/repeatComponent';
 import './Home.css';
 import setBodyColor from '../background';
-import newspaper from '../../assets/BenNewestNews.png';
+// import newspaper from '../../assets/BenNewestNews.png';
 
 Modal.setAppElement('#root');
 
@@ -26,7 +27,7 @@ const Home = () => {
             <div className='background'>
                 <div className='links'>
 
-                    <div id='about'>
+                    <div className='about'>
                         <button onClick={openModal}>-About Me</button>
                         <Modal
                             isOpen={modalIsOpen}
@@ -38,32 +39,32 @@ const Home = () => {
                                 },
                             }}
                         >
-                            <div id="aboutMeHeader">
-                                <h2>About Me</h2>
+                            <StackedPages />
 
                                 <button onClick={closeModal}>X</button>
-                                <img src={newspaper} id="newsModal" alt="information about me pop up"></img>
+                                
+                                {/* <img src={newspaper} id="newsModal" alt="information about me pop up"></img> */}
 
-                            </div>
-                            {/* repeatchar component was a challenge to myself. come up with a different way to display repeating elements */}
+                            
+                            {/* repeatchar component was a challenge to myself to come up with a different way to display repeating elements */}
                             <RepeatChar id="repStars" character="*" count={10} />
                         </Modal>
                         <span className="star">*</span>
 
                     </div>
-                    <div id='port'>
+                    <div className='port'>
                         <Link to='/portfolio'>-Portfolio</Link>
                         <span className="star">*</span>
                     </div>
-                    <div id='resume'>
+                    <div className='resume'>
                         <Link to='/resume'>-Resume</Link>
                         <span className="star">*</span>
                     </div>
-                    <div id='contact'>
+                    <div className='contact'>
                         <Link to='/contact'>-Contact</Link>
                         <span className="star">*</span>
                     </div>
-                    <div id='misc'>
+                    <div className='misc'>
                         <Link to='/misc'>-Misc.</Link>
                         <span className="star">*</span>
                     </div>
