@@ -1,8 +1,7 @@
 .stackedPagesContainer{
     position: relative;
-    height: 60vh;
-    width: 98%;
-    
+    height: 64vh;
+    width: 100%;
 }
 
 .spread{
@@ -16,48 +15,42 @@
 
 .pageEdges{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: 1px;
     height: 100%;
     width: 40px;
     
-    /* border-top: 1px solid #777;
-    border-bottom: 1px solid #777; */
-    /* display: flex;
-    flex-direction: column; 
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+
     
     transform-origin: left;
-    transform: rotateY(-10deg);  */
+    transform: rotateY(-10deg);  
     /* Slight rotation for fanned-out look */
 }
 
 .pageEdge{
     position: absolute;
-    right: 0;
+    right: -1px;
     height: 100%;
-    width: 2px;
+    width: 1px;
     background-color: #f8f8f8;
-    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.6);
 }
-
-/* .pageEdge{
-    flex: 1;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.1);
-    margin: 0 2px; 
-} */
 
 .leftPage, .rightPage {
     width: 50%; /* Half the width of the spread container */
     height: 100%;
-    border: 1px solid #777;
+    border: 1px  solid #777777;
     background-color: #fff; /* Assuming pages are white */
     box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     position: relative;
     z-index: 1;
     
+}
+
+.leftPage{
+    border-right-width: 0px;
 }
 
 .leftPage::after{
@@ -71,12 +64,14 @@
     z-index: 2;
 }
 
-.pageEdge:nth-child(1) { right: 8px; }
-.pageEdge:nth-child(2) { right: 16px; }
-.pageEdge:nth-child(3) { right: 24px; }
-.pageEdge:nth-child(4) { right: 32px; }
-.pageEdge:nth-child(5) { right: 40px; }
-.pageEdge:nth-child(6) { right: 48px; }
+.pageEdge:nth-child(1) { right: 1px; }
+.pageEdge:nth-child(2) { right: 6px; }
+.pageEdge:nth-child(3) { right: 11px; }
+.pageEdge:nth-child(4) { right: 16px; }
+.pageEdge:nth-child(5) { right: 21px; }
+.pageEdge:nth-child(6) { right: 26px; }
+.pageEdge:nth-child(7) { right: 31px; }
+.pageEdge:nth-child(8) { right: 36px; }
 
 
 
@@ -152,4 +147,13 @@
 
 .page.active {
     transform: translateZ(30px);
+} */
+
+/* .pageEdge{
+    flex: 1;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 2px; 
 } */

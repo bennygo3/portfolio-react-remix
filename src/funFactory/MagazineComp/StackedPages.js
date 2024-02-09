@@ -4,7 +4,7 @@ import './StackedPages.css';
 const StackedPages = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
-    const totalPages = 6;
+    const totalPages = 4;
 
     const goToNextSpread = () => {
         setCurrentPageIndex((prevIndex) => (prevIndex + 2) % totalPages);
@@ -38,7 +38,7 @@ const StackedPages = () => {
 
             </div>
             <div className='pageEdges'>
-                {Array.from({ length: 6 }).map((_, index) => (
+                {Array.from({ length: 8 }).map((_, index) => (
                     <div key={index} className='pageEdge' />
                 ))}
             </div>
@@ -49,15 +49,3 @@ const StackedPages = () => {
 };
 
 export default StackedPages;
-
-// <div className='stackedPagesContainer'>
- //<div className='stackedPages'> 
-   // {Array.from({ length: totalPages }, (_,i) => (
-        //<div key={i} className={`page ${i === currentPage ? 'active' : ''}`}>
-            //{renderPageContent(i)}
-       // </div>
-   // ))}
-//</div>
-//<button onClick={goToPreviousPage}>&#x2190;</button>
-//<button onClick={goToNextPage}>&#x2192;</button>
-//</div> 
