@@ -27,13 +27,14 @@ const StackedPages = () => {
     };
 
     return (
+        <>
         <div className='stackedPagesContainer'>
             <div className='spread'>
                 <div className='leftPage'>
                     {renderPageContent(currentPageIndex)}
                 </div>
                 <div className='rightPage'>
-                    {renderPageContent(currentPageIndex +1)}
+                    {renderPageContent(currentPageIndex + 1)}
                 </div>
 
             </div>
@@ -42,9 +43,11 @@ const StackedPages = () => {
                     <div key={index} className='pageEdge' />
                 ))}
             </div>
+            </div>
             <button onClick={goToPreviousSpread}>&#x2190;</button>
             <button onClick={goToNextSpread}>&#x2192;</button>
-        </div>
+            </>
+        
     );
 };
 

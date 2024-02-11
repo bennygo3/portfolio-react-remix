@@ -1,7 +1,19 @@
+body > div.ReactModalPortal > div > div{
+    background: rgb(143 125 107)!important;
+    inset: 65px!important;
+    overflow: visible;
+}
+
 .stackedPagesContainer{
     position: relative;
     height: 64vh;
     width: 100%;
+    max-width: 1350px;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow-y: hidden;
+    
+    margin-bottom: 15px;
 }
 
 .spread{
@@ -11,6 +23,7 @@
     position: relative;
     height: 100%;
     width: calc(100% - 40px); /* Subtract the width of the pageEdges */
+    
 }
 
 .pageEdges{
@@ -20,13 +33,9 @@
     height: 100%;
     width: 40px;
     
-    border-top: 1px solid #c4c4c4;
-    border-bottom: 1px solid #c4c4c4;
-
-    
-    transform-origin: left;
-    transform: rotateY(-10deg);  
-    /* Slight rotation for fanned-out look */
+    /* border-top: 1.5px solid #a8a8a8;
+    border-bottom: 1.5px solid #a8a8a8; */
+    background-color: #dfdfdf;
 }
 
 .pageEdge{
@@ -35,25 +44,25 @@
     height: 100%;
     width: 1px;
     background-color: #f8f8f8;
-    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 1px 0 1px rgba(61, 61, 61, 0.2); */
 }
 
 .leftPage, .rightPage {
     width: 50%; /* Half the width of the spread container */
     height: 100%;
-    border: 1px  solid #777777;
-    background-color: #fff; /* Assuming pages are white */
-    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+
+    background-color: #fff; 
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     position: relative;
     z-index: 1;
     
 }
 
 .leftPage{
-    border-right-width: 0px;
+    border-right: 1px solid black;
 }
 
-.leftPage::after{
+/* .leftPage::after{
     content: '';
     position: absolute;
     right: -1px;
@@ -62,7 +71,7 @@
     width: 1px;
     background-color: #777;
     z-index: 2;
-}
+} */
 
 .pageEdge:nth-child(1) { right: 1px; }
 .pageEdge:nth-child(2) { right: 6px; }
