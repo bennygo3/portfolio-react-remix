@@ -3,9 +3,13 @@ import MediaDescription from './MediaDescription';
 import './Misc.css';
 import ReactPlayer from 'react-player';
 import footballVid from '../../assets/BenFootball.mp4';
-import babyBen from '../../assets/babyBenCowboyPlastic.png';
-import moon from '../../assets/moonBright.png';
-import benGolf from '../../assets/TPCGolf.png';
+import tetons from '../../assets/tetonScenery.jpg';
+import bison from '../../assets/bison.jpg';
+import pebbleBBoats from '../../assets/pebbleBoats.jpg';
+import pebble from '../../assets/pebbleBeachMorning.jpg';
+import eclipse from '../../assets/bloodMoon.jpg';
+import jupiter from '../../assets/jupiterAndMoons.jpg';
+import pyramid from '../../assets/transAmBuilding.jpg';
 import { useNavigate } from 'react-router-dom';
 import setBodyColor from '../background';
 
@@ -16,16 +20,24 @@ const Misc = () => {
 
     const mediaContent = [
         { type: 'video', url: footballVid },
-        { type: 'image', url: benGolf },
-        { type: 'image', url: moon },
-        { type: 'image', url: babyBen },
+        { type: 'image', url: tetons },
+        { type: 'image', url: bison },
+        { type: 'image', url: pebbleBBoats },
+        { type: 'image', url: pebble },
+        { type: 'image', url: eclipse },
+        { type: 'image', url: jupiter },
+        { type: 'image', url: pyramid },
     ];
 
     const mediaDescriptions = [
         "Living in the glory days? Me? Never!",
-        "I worked at TPC Scottsdale",
-        "I took this picture of a moon",
-        "A picture of younger me, transformed into a toy(?) with Adobe Photoshop",
+        "Tetons and scenery from a recent trip to Wyoming",
+        "Wyoming locals",
+        "Golf wasn't as beautiful as Pebble",
+        "Pebble Beach in the morning",
+        "Lunar Eclipse, November 8th, 2022",
+        "A picture I took of Jupiter",
+        "Back to Earth. Beautiful San Francisco",
     ];
 
     const [currentChannel, setCurrentChannel] = useState(0);
