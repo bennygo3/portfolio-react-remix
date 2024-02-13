@@ -1,7 +1,53 @@
 body > div.ReactModalPortal > div > div{
     background: rgb(143 125 107)!important;
-    inset: 65px!important;
-    overflow: visible;
+    inset: 55px!important;
+    /* overflow: hidden !important; */
+    
+}
+
+.aboutMeHeader{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    letter-spacing: 2px;
+}
+
+.aboutMePgOne{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gCanyon{
+    height: 200px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+.aboutMePgTwo{
+    padding: 15px;
+}
+
+.pgTwoHeader{
+    display: flex;
+    flex-direction: row;
+    font-family: 'DM Serif Display', serif;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.youngBe{
+    /* --s: 2px; 
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0); */
+    height: 130px;
+    width: auto;
 }
 
 .stackedPagesContainer{
@@ -9,10 +55,9 @@ body > div.ReactModalPortal > div > div{
     height: 64vh;
     width: 100%;
     max-width: 1350px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 5px;
-    overflow-y: hidden;
-    
+    overflow: hidden;
     margin-bottom: 15px;
 }
 
@@ -28,8 +73,8 @@ body > div.ReactModalPortal > div > div{
 
 .pageEdges{
     position: absolute;
-    top: -1px;
-    right: 1px;
+    top: 0px;
+    right: 0px;
     height: 100%;
     width: 40px;
     

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './StackedPages.css';
+import youngMe from '../../assets/youngCowboyMe.jpg';
+import gCanyon from '../../assets/gcDrawing.jpg';
 
 const StackedPages = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -18,9 +20,18 @@ const StackedPages = () => {
         // Page content components
         switch (pageIndex) {
             case 0:
-                return <div>Page 1 Content</div>;
+                return <div>
+                <div className='aboutMePgOne'>Benjamin A. Gomez</div>
+                        <img className='gCanyon' src={gCanyon} alt='drawing of the grand canyon' />
+                        </div>
             case 1:
-                return <div>Page 2 Content</div>;
+                return <div className= 'aboutMePgTwo'>
+                    <header className= 'pgTwoHeader'>
+                            <img className='youngBe' src={youngMe} alt='of myself when I was younger'/>
+                            <h1>Chapter 1</h1>
+                            </header>   
+                        </div>
+                ;
             default:
                 return <div>Default Content</div>;
         }
@@ -28,26 +39,28 @@ const StackedPages = () => {
 
     return (
         <>
-        <div className='stackedPagesContainer'>
-            <div className='spread'>
-                <div className='leftPage'>
-                    {renderPageContent(currentPageIndex)}
-                </div>
-                <div className='rightPage'>
-                    {renderPageContent(currentPageIndex + 1)}
-                </div>
+            <h1 className='aboutMeHeader'>About Me</h1>
+            <div className='stackedPagesContainer'>
 
-            </div>
-            <div className='pageEdges'>
-                {Array.from({ length: 8 }).map((_, index) => (
-                    <div key={index} className='pageEdge' />
-                ))}
-            </div>
+                <div className='spread'>
+                    <div className='leftPage'>
+                        {renderPageContent(currentPageIndex)}
+                    </div>
+                    <div className='rightPage'>
+                        {renderPageContent(currentPageIndex + 1)}
+                    </div>
+
+                </div>
+                <div className='pageEdges'>
+                    {Array.from({ length: 8 }).map((_, index) => (
+                        <div key={index} className='pageEdge' />
+                    ))}
+                </div>
             </div>
             <button onClick={goToPreviousSpread}>&#x2190;</button>
             <button onClick={goToNextSpread}>&#x2192;</button>
-            </>
-        
+        </>
+
     );
 };
 
