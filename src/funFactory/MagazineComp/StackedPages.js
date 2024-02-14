@@ -28,17 +28,16 @@ const StackedPages = () => {
             case 1:
                 return <div className='aboutMePgTwo'>
                     <header className='pgTwoHeader'>
-                        <img className='youngBe' src={youngMe} alt='of myself when I was younger' />
                         <h1>Chapter &#x2776;</h1>
                     </header>
                     <div className="horizontalLine"></div>
                     <p>Hello! <br></br> My name is Ben Gomez. I am a Software Engineer.<br></br> 
-                        I was born and raised in Phoenix, Arizona. I am
-                        currently residing in Austin,  
+                        I was born and raised in Phoenix, Arizona. <br></br>I am
+                        currently residing in Austin, Texas 
                         <span className='capContainer'>
                         <img className='capBuilding' src={pease} alt='Capitol building, Austin, Texas. Viewed from Pease Park'></img>
                         </span>
-                        Texas. 
+                         .
                     </p>
                 </div>;
             default:

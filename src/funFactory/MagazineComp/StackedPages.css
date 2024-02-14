@@ -1,7 +1,7 @@
 body > div.ReactModalPortal > div > div{
     background: rgb(143 125 107)!important;
     inset: 55px!important;
-    /* overflow: hidden !important; */
+    overflow: hidden !important;
     
 }
 
@@ -9,19 +9,21 @@ body > div.ReactModalPortal > div > div{
     text-align: center;
     margin-bottom: 10px;
     font-family: 'DM Serif Display', serif;
-    font-size: 44px;
+    font-size: 50px;
     letter-spacing: 2px;
 }
 
 .aboutMePgOne{
     font-family: 'Poppins', sans-serif;
-    font-size: 100px;
+    font-weight: 100;
+    font-size: 90px;
     padding: 10px;
     text-align: center;
+    
 }
 
 .gCanyon{
-    height: 200px;
+    height: 245px;
     width: auto;
     margin: auto;
     display: block;
@@ -34,15 +36,23 @@ body > div.ReactModalPortal > div > div{
 .pgTwoHeader{
     display: flex;
     flex-direction: row;
-    font-family: 'DM Serif Display', serif;
     justify-content: space-evenly;
     align-items: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 23px;
+    
 }
 
-
 .youngBe{
-    height: 130px;
+    height: 100px;
     width: auto;
+}
+
+.horizontalLine{
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 15px auto;
 }
 
 .capContainer{
@@ -51,6 +61,7 @@ body > div.ReactModalPortal > div > div{
     vertical-align: middle;
     line-height: 0;
     margin-right: 22px;
+    margin-left: 3px;
 }
 
 .capBuilding{
@@ -69,13 +80,12 @@ body > div.ReactModalPortal > div > div{
 
 .aboutMePgTwo p{
     position: relative;
+    margin-left: 20px;
+    line-height: 1.35;
+    
+    font-size: 18px;
 }
-.horizontalLine{
-    width: 95%;
-    height: 1px;
-    background-color: black;
-    margin: 15px auto;
-}
+
 
 .stackedPagesContainer{
     position: relative;
@@ -104,9 +114,6 @@ body > div.ReactModalPortal > div > div{
     right: 0px;
     height: 100%;
     width: 40px;
-    
-    /* border-top: 1.5px solid #a8a8a8;
-    border-bottom: 1.5px solid #a8a8a8; */
     background-color: #dfdfdf;
 }
 
@@ -120,30 +127,18 @@ body > div.ReactModalPortal > div > div{
 }
 
 .leftPage, .rightPage {
-    width: 50%; /* Half the width of the spread container */
+    width: 50%;
     height: 100%;
-
-    background-color: #fff; 
-    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: #fff;
+    box-shadow: 1px 0px 23px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
-    
 }
 
 .leftPage{
-    border-right: 1px solid black;
+    border-right: 2px solid black;
+    box-shadow: 20px 1px 10px black;
 }
-
-/* .leftPage::after{
-    content: '';
-    position: absolute;
-    right: -1px;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    background-color: #777;
-    z-index: 2;
-} */
 
 .pageEdge:nth-child(1) { right: 1px; }
 .pageEdge:nth-child(2) { right: 6px; }
@@ -161,86 +156,3 @@ body > div.ReactModalPortal > div > div{
     outline: 1px solid #000;
     outline-offset: calc(-1*var(--s));
     background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0); */
-
-/* .pageEdge:last-child{
-    margin-bottom: 0;
-    box-shadow: inset 0px -2px 2px 0px rgba(0, 0, 0, 0.4);
-} */
-
-/* .stackedPagesContainer{
-    position: relative;
-} */
-
-/* .spread{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 60vh;
-    width: 98%;
-} */
-
-/* .pageEdges{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 30px;
-    display: flex;
-    flex-direction: row;
-} */
-
-/* .pageEdge {
-    flex: 1;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 2px 0;
-} */
-
-
-
-/* .stackedPages{
-    position: relative;
-    width: 400px;
-    height: 500px;
-    transform-style: preserve-3d;
-} */
-
-/* .leftPage, .rightPage{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #777777;
-    transform-style: preserve-3d;
-} */
-
-/* .pageCrease{
-    width: 2px;
-    background-color: #000;
-    position: absolute;
-    left: 50%;
-    height: 100%;
-} */
-/* .page{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-    transform: translateZ(-1px);
-    transition: transform 0.5s;
-}
-
-.page.active {
-    transform: translateZ(30px);
-} */
-
-/* .pageEdge{
-    flex: 1;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.1);
-    margin: 0 2px; 
-} */
