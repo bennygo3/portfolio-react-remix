@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './StackedPages.css';
 import youngMe from '../../assets/youngCowboyMe.jpg';
 import gCanyon from '../../assets/gcDrawing.jpg';
+import pease from '../../assets/peaseCap.jpg';
 
 const StackedPages = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -21,17 +22,25 @@ const StackedPages = () => {
         switch (pageIndex) {
             case 0:
                 return <div>
-                <div className='aboutMePgOne'>Benjamin A. Gomez</div>
-                        <img className='gCanyon' src={gCanyon} alt='drawing of the grand canyon' />
-                        </div>
+                    <div className='aboutMePgOne'>Benjamin A. Gomez</div>
+                    <img className='gCanyon' src={gCanyon} alt='drawing of the grand canyon' />
+                </div>
             case 1:
-                return <div className= 'aboutMePgTwo'>
-                    <header className= 'pgTwoHeader'>
-                            <img className='youngBe' src={youngMe} alt='of myself when I was younger'/>
-                            <h1>Chapter 1</h1>
-                            </header>   
-                        </div>
-                ;
+                return <div className='aboutMePgTwo'>
+                    <header className='pgTwoHeader'>
+                        <img className='youngBe' src={youngMe} alt='of myself when I was younger' />
+                        <h1>Chapter &#x2776;</h1>
+                    </header>
+                    <div className="horizontalLine"></div>
+                    <p>Hello! <br></br> My name is Ben Gomez. I am a Software Engineer.<br></br> 
+                        I was born and raised in Phoenix, Arizona. I am
+                        currently residing in Austin,  
+                        <span className='capContainer'>
+                        <img className='capBuilding' src={pease} alt='Capitol building, Austin, Texas. Viewed from Pease Park'></img>
+                        </span>
+                        Texas. 
+                    </p>
+                </div>;
             default:
                 return <div>Default Content</div>;
         }
