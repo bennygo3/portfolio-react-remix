@@ -1,7 +1,7 @@
 body > div.ReactModalPortal > div > div{
     background: rgb(143 125 107)!important;
     inset: 55px!important;
-    overflow: hidden !important;
+    overflow: auto !important;
     
 }
 
@@ -9,8 +9,17 @@ body > div.ReactModalPortal > div > div{
     text-align: center;
     margin-bottom: 10px;
     font-family: 'DM Serif Display', serif;
-    font-size: 50px;
-    letter-spacing: 2px;
+    font-size: 65px;
+    letter-spacing: 1px;
+}
+
+.spread{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: calc(100% - 40px); /* Subtract the width of the pageEdges */
 }
 
 .aboutMePgOne{
@@ -23,7 +32,7 @@ body > div.ReactModalPortal > div > div{
 }
 
 .gCanyon{
-    height: 245px;
+    height: 225px;
     width: auto;
     margin: auto;
     display: block;
@@ -40,12 +49,6 @@ body > div.ReactModalPortal > div > div{
     align-items: center;
     font-family: 'DM Serif Display', serif;
     font-size: 23px;
-    
-}
-
-.youngBe{
-    height: 100px;
-    width: auto;
 }
 
 .horizontalLine{
@@ -55,14 +58,34 @@ body > div.ReactModalPortal > div > div{
     margin: 15px auto;
 }
 
+.aboutMePgTwoParagraph{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.youngBe{
+    height: 100px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.aboutMePgTwo p{
+    position: relative;
+    margin-left: 20px;
+    line-height: 1.25;
+    font-size: 18px;
+}
+
 .capContainer{
     display: inline-block;
     position: relative;
     vertical-align: middle;
     line-height: 0;
     margin-right: 22px;
-    margin-left: 3px;
+    margin-left: 5px;
 }
+
 
 .capBuilding{
     position: absolute;
@@ -74,38 +97,19 @@ body > div.ReactModalPortal > div > div{
 }
 
 .capBuilding:hover{
-    height: 190px;
+    height: 200px;
     width: auto;
 }
-
-.aboutMePgTwo p{
-    position: relative;
-    margin-left: 20px;
-    line-height: 1.35;
-    
-    font-size: 18px;
-}
-
 
 .stackedPagesContainer{
     position: relative;
     height: 64vh;
-    width: 100%;
+    width: auto;
     max-width: 1350px;
     border: 2px solid black;
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 3px;
+    overflow: auto;
     margin-bottom: 15px;
-}
-
-.spread{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    width: calc(100% - 40px); /* Subtract the width of the pageEdges */
-    
 }
 
 .pageEdges{
@@ -117,6 +121,7 @@ body > div.ReactModalPortal > div > div{
     background-color: #dfdfdf;
 }
 
+/* these are the lines meant to replicate pages */
 .pageEdge{
     position: absolute;
     right: -1px;
