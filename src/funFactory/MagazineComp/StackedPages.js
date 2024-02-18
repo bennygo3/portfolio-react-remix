@@ -42,7 +42,16 @@ const StackedPages = () => {
                             </span>
                             my home.
                         </p>
+                        
                     </div>
+                    <p>
+                        Shortly after moving to Austin in 2012, I started working at the Fazio Canyons Golf Course at Barton Creek. 
+                        I was chatting with a member about going to school to become a paramedic and he mentioned
+                        that his company developed some of the technology used by 911 call centers. I remember being
+                        impressed that folks had figured out a way to come up with a solution for that need.
+                        I continued on with paramedic school and during a lesson that involved giving medications at certain intervals, 
+                        I had an idea for an application that could help with keeping track of the timing for each medication. During another lesson we learned about the system Austin Travis County EMS uses
+                    </p>
                 </div>;
             default:
                 return <div>Default Content</div>;
