@@ -13,7 +13,7 @@ import pyramid from '../../assets/transAmBuilding.jpg';
 import { useNavigate } from 'react-router-dom';
 import setBodyColor from '../background';
 
-import TV from '../../assets/TV.png';
+// import TV from '../../assets/TV.png';
 import remote from '../../assets/Remote.png';
 
 const Misc = () => {
@@ -95,7 +95,7 @@ const Misc = () => {
             <div className="tvRemoteContainer">
             <div className='tvContainer'>
                 {renderMedia(mediaContent[currentChannel])}
-                <img className="tv" src={TV} alt="TV frame" />
+                {/* <img className="tv" src={TV} alt="TV frame" /> */}
             </div>
             <div className='remoteContainer'>
                 <img id='remote' src={remote} alt="TV remote" />

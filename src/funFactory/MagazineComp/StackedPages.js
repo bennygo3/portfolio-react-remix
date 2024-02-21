@@ -3,6 +3,7 @@ import './StackedPages.css';
 import youngMe from '../../assets/youngCowboyMe.jpg';
 import gCanyon from '../../assets/gcDrawing.jpg';
 import pease from '../../assets/peaseCap.jpg';
+import Misc from '../../pages/Misc/Misc.js';
 
 const StackedPages = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -53,6 +54,8 @@ const StackedPages = () => {
                         I had an idea for an application that could help with keeping track of the timing for each medication. During another lesson we learned about the system Austin Travis County EMS uses
                     </p>
                 </div>;
+            case 3:
+                return<><Misc /></>
             default:
                 return <div>Default Content</div>;
         }
