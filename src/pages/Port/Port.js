@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSwipeable } from "react-swipeable";
 
+
 import Poke from "../../assets/PokeWeather.png";
 import Decked from "../../assets/Decked.png";
 import Weather from "../../assets/WhereToWeather.png";
@@ -53,7 +54,7 @@ const Port = ({ children }) => {
                     return React.cloneElement(child, { width: "100%" });
                 })}
             </div>
-            {/* <img id="butler" src={tray} alt="computer frame"></img> */}
+
             <div className="indicators">
                 <button className="leftButton"
                     onClick={() => {
@@ -76,6 +77,7 @@ const Port = ({ children }) => {
                         </button>
                     );
                 })}
+                
                 <button className="rightButton"
                     onClick={() => {
                         updateIndex(activeIndex + 1);

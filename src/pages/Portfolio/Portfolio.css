@@ -81,12 +81,21 @@
     line-height: 1.5em;
 }
 
+.portfolioHomeButton{
+    font-family: omnes-narrow, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+}
+
 
 
 .indicators {
     display: flex;
     justify-content: center;
     margin-top: 8px;
+    padding-bottom: 30px;
 }
 
 .indicators > button{
@@ -97,7 +106,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 38px;
-    margin: 3px 5px -3px;
+    margin: 3px 5px -3px 0px;
     cursor: pointer;
     filter: drop-shadow(.1rem .1rem .1rem rgba(0, 0, 0, 0.584));
 }
@@ -176,7 +185,7 @@
 #bottom { bottom: 0; }
 
 /* this prevents unwanted, browser implemented css for h1*/
-h1 {
+.header h1 {
     display: block;
     font-size: 2em;
     margin-block-start: 0em;

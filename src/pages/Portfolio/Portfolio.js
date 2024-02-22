@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSwipeable } from "react-swipeable";
+import HomeButton from '../../funFactory/Buttons/HomeButton';
 import setBodyColor from '../background';
 import Poke from "../../assets/PokeWeather.png";
 import Decked from "../../assets/Decked.png";
@@ -22,6 +23,8 @@ const PortItem = ({ children, width }) => {
 
     );
 };
+
+
 
 const Port = ({ children }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -87,6 +90,7 @@ const Port = ({ children }) => {
                         </button>
                     );
                 })}
+                <HomeButton className="portfolioHomeButton" />
                 <button className="rightButton"
                     onClick={() => {
                         updateIndex(activeIndex + 1);
