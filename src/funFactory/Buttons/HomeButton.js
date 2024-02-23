@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const HomeButton = () => {
     const navigate = useNavigate();
     return (
-        <button onClick={() => navigate('/')}>Home</button>
+        <button className ="portfolioHomeButton" onClick={() => navigate('/')}>Home</button>
     );
 };
 

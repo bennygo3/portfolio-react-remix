@@ -5,7 +5,7 @@ import StackedPages from '../../funFactory/MagazineComp/StackedPages';
 import RepeatChar from '../../funFactory/repeatComponent';
 import './Home.css';
 import setBodyColor from '../background';
-// import newspaper from '../../assets/BenNewestNews.png';
+
 
 Modal.setAppElement('#root');
 
@@ -23,7 +23,7 @@ const Home = () => {
     setBodyColor({ color: "#c7bd9c" });
 
     return (
-        <>
+       
             <div className='background'>
                 <div className='links'>
 
@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
 
             </div>
-        </>
+        
     );
 }
 

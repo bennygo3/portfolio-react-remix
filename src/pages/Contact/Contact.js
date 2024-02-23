@@ -3,15 +3,12 @@ import { Link } from 'react-router-dom';
 // import setBodyColor from '../background';
 // import starsBackground from '../../assets/yellowStars.jpeg';
 import './Contact.css';
-import home from '../../assets/homeIcon.png';
+// import home from '../../assets/homeIcon.png';
 
 export default function Contact() {
 
   return (
     <div className="contactBckg">
-      {/* <div className="contactBckg" style={{ 
-      backgroundImage: `url(${starsBackground})`,
-     }}> */}
 
       <header>
         <div id="header">Contact</div>
@@ -36,12 +33,11 @@ export default function Contact() {
           <i className="fa fa-github" aria-hidden="true"></i>
         </a>
 
-        <Link id="homeContact" to='/'>
-          <img src={home} alt="home icon" />
-          <p id="homeText">Home</p>
-        </Link>
-
       </div>
+      <Link id="homeContact" to='/'>
+          {/* <img src={home} alt="home icon" /> */}
+          <p id="homeText">Home</p>
+      </Link>
 
     </div>
 
