@@ -1,73 +1,77 @@
 body > div.ReactModalPortal > div > div{
     background: rgb(143 125 107)!important;
-    inset: 50px!important;
+    inset: 60px!important;
     overflow: auto !important;
     
 }
 
 .aboutMeHeader{
     text-align: center;
-    margin-bottom: 10px;
+    
     font-family: 'DM Serif Display', serif;
     font-size: 65px;
     letter-spacing: 1px;
+    margin-block-start: 0px;
+}
+
+.stackedPagesContainer{
+    position: relative;
+    max-width: 1350px;
+    border: 2px solid black;
+    border-radius: 3px;
+    /* overflow: auto; */
+    margin-bottom: 15px;
 }
 
 .spread{
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     position: relative;
-    height: 100%;
-    width: calc(100% - 40px); /* Subtract the width of the pageEdges */
+    height: auto;
+    width: calc(100% - 40px); /* Subtracts the width of the pageEdges */
 }
 
 .aboutMePgOne{
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 90px;
+    font-size: 75px;
     padding: 10px;
     text-align: center;
-    
+    display: flex;
+    flex-direction: column; 
 }
 
 .gCanyon{
-    height: 229px;
-    width: auto;
-    margin: auto;
-    display: block;
-}
-
-.aboutMePgTwo{
-    padding: 15px;
+    height: auto;
+    width: 85%;
+    margin: 10px auto ;
+    
 }
 
 .pgTwoHeader{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    text-align: center;
     font-family: 'DM Serif Display', serif;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 .horizontalLine{
-    width: 80%;
+    width: 70%;
     height: 1px;
     background-color: black;
-    margin: 15px auto;
+    margin: auto;
+}
+.youngBe{
+    height: 98px;
+    width: auto;
+    margin: 8px;
 }
 
 .aboutMePgTwoParagraph{
     display: flex;
+    font-size: 15px;
     flex-direction: row;
     align-items: flex-end;
-}
-
-.youngBe{
-    height: 100px;
-    width: auto;
-    margin-bottom: 10px;
 }
 
 .aboutMePgTwo p{
@@ -94,22 +98,12 @@ body > div.ReactModalPortal > div > div{
     height: 15px;
     width: auto;
     transition: height 0.4s ease;
+    z-index: 2;
 }
 
 .capBuilding:hover{
     height: 200px;
     width: auto;
-}
-
-.stackedPagesContainer{
-    position: relative;
-    height: 62vh;
-    width: auto;
-    max-width: 1350px;
-    border: 2px solid black;
-    border-radius: 3px;
-    overflow: auto;
-    margin-bottom: 15px;
 }
 
 .pageEdges{
@@ -133,7 +127,7 @@ body > div.ReactModalPortal > div > div{
 
 .leftPage, .rightPage {
     width: 50%;
-    height: 100%;
+    height: auto;
     background-color: #fff;
     box-shadow: 1px 0px 23px rgba(0, 0, 0, 0.5);
     position: relative;

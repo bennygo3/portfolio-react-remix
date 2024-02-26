@@ -43,9 +43,6 @@ const Home = () => {
 
                                 <button onClick={closeModal}>X</button>
                                 
-                                {/* <img src={newspaper} id="newsModal" alt="information about me pop up"></img> */}
-
-                            
                             {/* repeatchar component was a challenge to myself to come up with a different way to display repeating elements */}
                             <RepeatChar id="repStars" character="*" count={10} />
                         </Modal>

@@ -22,14 +22,14 @@ const StackedPages = () => {
         // Page content components
         switch (pageIndex) {
             case 0:
-                return <div>
-                    <div className='aboutMePgOne'>Benjamin A. Gomez</div>
+                return <div className='aboutMePgOne'>
+                    <div>Benjamin A. Gomez</div>
                     <img className='gCanyon' src={gCanyon} alt='drawing of the grand canyon' />
                 </div>
             case 1:
                 return <div className='aboutMePgTwo'>
-                    <header className='pgTwoHeader'>
-                        <h1>Chapter 1</h1>
+                    <header>
+                        <h1 className='pgTwoHeader'>Chapter 1</h1>
                     </header>
                     <div className='horizontalLine'></div>
                     <div className='aboutMePgTwoParagraph'>
