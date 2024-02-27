@@ -1,4 +1,4 @@
-.electronics {
+/* .electronics {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,15 +6,15 @@
     gap: 50px;
     height: 100dvh;
     width: 100dvw;
-}
+} */
 
 .tvContainer {
     position: relative;
     max-height: 677px;
-    height: 450px;
+    /* height: 500px; */
     min-height: 300px;
     max-width: 829px;
-    width: 715px;
+    /* width: 715px; */
     min-width: 368px;
 }
 
