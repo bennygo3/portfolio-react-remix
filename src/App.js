@@ -1,16 +1,11 @@
 import React from 'react';
-// import  MyContextProvider  from '../src/pages/Misc/MyContext.js';
 import { ModalContextProvider } from '../src/pages/ModalContext/ModalContext.js';
 import './App.css';
 import { 
-  // BrowserRouter as Router,
   Routes, 
   Route,
- 
 } from "react-router-dom";
-// import { Dialog } from "@reach/dialog";
-// import Modal from 'react-modal';
-// import Chain from './components/ChainPortfolio/ChainP';
+
 
 import Home from './pages/Home/Home';
 import AboutMe from './pages/About/About';
