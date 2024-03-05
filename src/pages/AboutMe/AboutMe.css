@@ -1,42 +1,45 @@
-body > div.ReactModalPortal > div > div{
-    
-    inset: 60px!important;
-    overflow: auto !important;
-    
+.aboutMeBody{
+    background: rgb(143 125 107);
+    min-height: 100vh;
+    width: 100%;
 }
 
 .aboutMeBody{
     background: rgb(143 125 107);
-    height: 100dvh;
-    width: auto;
-
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .aboutMeHeader{
     text-align: center;
     font-family: 'DM Serif Display', serif;
-    font-size: 57px;
-    letter-spacing: 1px;
+    font-size: 75px;
+    letter-spacing: 12px;
     margin-block-start: 0px;
 }
 
+/* container for the pages effect and visible pages */
 .stackedPagesContainer{
+    font-family: 'Times New Roman', serif;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
+    margin-bottom: 5px;
     width: 90%;
-    max-width: 1350px;
-    border: 2px solid black;
+    max-width: 1150px;
+    border: 1px solid black;
     border-radius: 3px;
-    /* overflow: auto; */
-    margin-bottom: 15px;
 }
 
-/* container for the left and right page */
+/* container for just the left and right page */
 .spread {
     display: flex;
-    justify-content: center;
-    max-height: 650px;
     position: relative;
+    max-height: 650px;
+    min-height: 500px;
     height: auto;
     width: calc(100% - 40px); /* Subtracts the width of the pageEdges */
 }
@@ -46,7 +49,7 @@ body > div.ReactModalPortal > div > div{
     height: auto;
     background-color: #fff;
     border-right: 2px solid black;
-    box-shadow: 20px 1px 10px black;
+    box-shadow: 2px 1px 10px black;
     position: relative;
     z-index: 1;
     display: flex;
@@ -54,10 +57,24 @@ body > div.ReactModalPortal > div > div{
     justify-content: space-evenly;
 }
 
+.rightPage{
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    border-right: 1px solid black;
+    box-shadow: 1px 2px 10px -2px black;
+    position: relative;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
 .aboutMePgOne{
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 75px;
+    font-size: 70px;
     padding: 1px;
     text-align: center;
 }
@@ -66,43 +83,35 @@ body > div.ReactModalPortal > div > div{
     height: 220px;
     width: 85%;
     margin: 30px auto ;
-    
 }
 
-.rightPage {
-    width: 50%;
-    height: auto;
-    background-color: #fff;
-    box-shadow: 0px 1px 10px 0px black;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family: 'Times New Roman', serif;
-    text-align: justify;
+.aboutMePgTwo {
+    /* text-align: justify; */
     position: relative;
     padding: 1vw;
     line-height: 1.23;
     font-size: calc(0.3vw + 0.9em);
-    
-
 }
 
 .pgTwoHeader{
+    position: relative;
+    top: -20px;
     text-align: center;
     font-family: 'DM Serif Display', serif;
     font-size: 30px;
+    letter-spacing: 1px;
 }
 
 .horizontalLine{
-    width: 70%;
+    position: relative;
+    top: -10px;
+    width: 50%;
     height: 1px;
     background-color: black;
     margin: auto;
 }
 .youngBe{
-    height: 98px;
+    height: 90px;
     width: auto;
     margin-left: 1px;
     margin-right: 10px;
@@ -113,43 +122,26 @@ body > div.ReactModalPortal > div > div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: -15px;
-    margin: 0.5vw 1vw;
+    margin: 0.5vw 1.5vw;
+    /* margin-bottom: -15px; */
 }
 
 .aboutMePgTwoSecondP{
-
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 10px;
-    margin-inline-end: 0px;
-    margin: 0.5vw 1vw;
+    margin: 0.5vw 1.5vw;
 }
 
-.capContainer{
+.aboutMePgTwoThirdP{
+    margin: 0.5vw 1.5vw;
+}
+
+/* .capContainer{
     display: inline-block;
     position: relative;
     vertical-align: middle;
     line-height: 0;
     margin-right: 22px;
     margin-left: 5px;
-}
-
-
-.capBuilding{
-    position: absolute;
-    padding-right: 5px;
-    top: -10px;
-    height: 15px;
-    width: auto;
-    transition: height 0.4s ease;
-    z-index: 2;
-}
-
-.capBuilding:hover{
-    height: 200px;
-    width: auto;
-}
+} */
 
 .aboutMePgThreeFirstP{
     display: flex;
@@ -202,3 +194,18 @@ body > div.ReactModalPortal > div > div{
     outline: 1px solid #000;
     outline-offset: calc(-1*var(--s));
     background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0); */
+
+    /* .capBuilding{
+    position: absolute;
+    padding-right: 5px;
+    top: -10px;
+    height: 15px;
+    width: auto;
+    transition: height 0.4s ease;
+    z-index: 2;
+} */
+
+/* .capBuilding:hover{
+    height: 200px;
+    width: auto;
+} */
