@@ -7,7 +7,7 @@ import remote from '../../assets/Remote.png';
 import poster from '../../assets/Poster.png';
 
 import styles from './styles.module.css';
-import setBodyColor from '../background';
+import setBodyColor from '../../pages/background';
 
 const cards = [
   `${lilCowboy}`,

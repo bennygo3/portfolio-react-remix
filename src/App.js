@@ -8,9 +8,9 @@ import {
 
 
 import Home from './pages/Home/Home';
-import AboutMe from './pages/About/About';
-import Contact from './pages/Contact/Contact';
-import Resume from './pages/Resume/Resume';
+import AboutMe from './pages/AboutMe/AboutMe.js';
+import Contact from './pages/Contact/Contact.js';
+import Resume from './pages/Resume/Resume.js';
 
 import Portfolio  from  './pages/Portfolio/Portfolio';
 import Misc from './pages/Misc/Misc';

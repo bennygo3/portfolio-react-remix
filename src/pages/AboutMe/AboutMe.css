@@ -1,8 +1,15 @@
 body > div.ReactModalPortal > div > div{
-    background: rgb(143 125 107)!important;
+    
     inset: 60px!important;
     overflow: auto !important;
     
+}
+
+.aboutMeBody{
+    background: rgb(143 125 107);
+    height: 100dvh;
+    width: auto;
+
 }
 
 .aboutMeHeader{
@@ -15,6 +22,8 @@ body > div.ReactModalPortal > div > div{
 
 .stackedPagesContainer{
     position: relative;
+    margin: auto;
+    width: 90%;
     max-width: 1350px;
     border: 2px solid black;
     border-radius: 3px;

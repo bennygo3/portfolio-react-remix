@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './StackedPages.css';
+import './AboutMe.css';
 import youngMe from '../../assets/youngCowboyMe.jpg';
 import gCanyon from '../../assets/gcDrawing.jpg';
 import pease from '../../assets/peaseCap.jpg';
-import Misc from '../../pages/Misc/Misc.js';
+import Misc from '../Misc/Misc.js';
 
 const StackedPages = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -83,7 +83,7 @@ const StackedPages = () => {
     };
 
     return (
-        <>
+        <main className="aboutMeBody">
             <h1 className='aboutMeHeader'>About Me</h1>
             <div className='stackedPagesContainer'>
 
@@ -104,7 +104,7 @@ const StackedPages = () => {
             </div>
             <button onClick={goToPreviousSpread}>&#x2190;</button>
             <button onClick={goToNextSpread}>&#x2192;</button>
-        </>
+        </main>
 
     );
 };

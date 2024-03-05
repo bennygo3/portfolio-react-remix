@@ -31,3 +31,17 @@ class Modal extends React.Component {
 }
 
 export default Modal;
+
+//logic removed from about me below:
+// <Modal
+//isOpen={modalIsOpen}
+//onRequestClose={closeModal}
+//contentLabel="About Me Modal"
+//style={{
+//    content: {
+//        border: '5px double black',
+//    },
+//}}
+//>
+//<button onClick={closeModal}>X</button>
+//</Modal> 
