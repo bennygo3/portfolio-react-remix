@@ -20,7 +20,10 @@ const PageTwo = () => {
                 members from diverse backgrounds.
             </p>
             <p className='aboutMePgTwoThirdP'>
-                One memorable morning, I was chatting with a member about my enrollment in paramedic school, and he shared insights into his company's development of technology used by  911 call centers. This conversation not only piqued my curiosity about innovative software solutions but also underscored how integral and sometimes overlooked software is in shaping our everyday world.
+                One memorable morning, I was chatting with a member about my enrollment in paramedic school, and he shared insights 
+                into his company's development of technology used by 911 call centers. 
+                This conversation not only piqued my curiosity about innovative software solutions but also underscored how integral 
+                and sometimes overlooked software is in shaping our everyday world.
             </p>
 
         </div>

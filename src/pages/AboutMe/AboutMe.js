@@ -3,6 +3,7 @@ import './AboutMe.css';
 import PageOne from './AboutMeComp/PageOne.js';
 import PageTwo from './AboutMeComp/PageTwo.js';
 import PageThree from './AboutMeComp/PageThree.js';
+import PageFour from './AboutMeComp/PageFour.js';
 import Misc from '../Misc/Misc.js';
 
 const StackedPages = () => {
@@ -34,11 +35,11 @@ const StackedPages = () => {
             case 2:
                 return <PageThree />
             case 3:
-                return <>
-                    <Misc className="aboutMeMisc" />
-                </>;
+                return <PageFour />
+            case 4:
+                return <Misc className="aboutMeMisc" />
             default:
-                return <div>TBD Content</div>;
+                return <></>
         }
     };
 
@@ -62,8 +63,10 @@ const StackedPages = () => {
                     ))}
                 </div>
             </div>
-            <button onClick={goToPreviousSpread}>&#x2190;</button>
-            <button onClick={goToNextSpread}>&#x2192;</button>
+            <div className='aboutMeButtons'>
+                <button className='leftPageArrow' onClick={goToPreviousSpread}>&#x2190;Page</button>
+                <button className='rightPageArrow' onClick={goToNextSpread}>Page&#x2192;</button>
+            </div>
         </main>
 
     );
