@@ -65,6 +65,9 @@ const StackedPages = () => {
             </div>
             <div className='aboutMeButtons'>
                 <button className='leftPageArrow' onClick={goToPreviousSpread}>&#x2190;Page</button>
+                
+                {/* <button className="aboutMeHomeButton">Home</button> */}
+                
                 <button className='rightPageArrow' onClick={goToNextSpread}>Page&#x2192;</button>
             </div>
         </main>
