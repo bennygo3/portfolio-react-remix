@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AboutMe.css';
 import PageOne from './AboutMeComp/PageOne.js';
 import PageTwo from './AboutMeComp/PageTwo.js';
@@ -65,9 +66,9 @@ const StackedPages = () => {
             </div>
             <div className='aboutMeButtons'>
                 <button className='leftPageArrow' onClick={goToPreviousSpread}>&#x2190;Page</button>
-                
-                {/* <button className="aboutMeHomeButton">Home</button> */}
-                
+                <Link to={"/"}>
+                    <button className="aboutMeHomeButton">Home</button>
+                </Link>
                 <button className='rightPageArrow' onClick={goToNextSpread}>Page&#x2192;</button>
             </div>
         </main>
