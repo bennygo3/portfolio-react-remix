@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import resumeLink from '../../assets/resPPlane.png';
 
 import home from '../../assets/homeIcon.png';
-import BenResume from './Resume.pdf';
+import BenResume from './resume.pdf';
 import './Resume.css';
 
 export default function Resume() {
