@@ -116,22 +116,18 @@ const Portfolio = () => {
             <h1 className="title"> </h1>
 
             <Port>
-
                 <PortItem>
-
                     <div className="group">
-                        <h1 className="title">Decked-Out </h1>
+                        <h1 className="title">IndexEd </h1>
                         <p className="info">
                             A MERN stack project which allows users to create and save flashcards for studying and learning.
                         </p>
 
 
-                        <a className="portContainer" href="https://decked--out.herokuapp.com/" rel="noreferrer" target={"_blank"}>
+                        <a className="portContainer" href="https://indexed-73ca67d82b9c.herokuapp.com/" rel="noreferrer" target={"_blank"}>
                             <img src={Decked} alt="snapshot of Decked Out application"></img>
                         </a>
                     </div>
-
-
                 </PortItem>
 
                 <PortItem>
